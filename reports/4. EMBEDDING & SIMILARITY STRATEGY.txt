@@ -1,0 +1,140 @@
+EMBEDDING & SIMILARITY STRATEGY
+(RAG-First, Domain-Agnostic, GPU-Efficient)
+
+Design North Star
+Embeddings must represent “exam-meaning,” not slide wording.
+If two chunks help a student recall the same thing under pressure, they should be close—regardless of phrasing or PPT source.
+
+High-Level Flow
+
+1) WHAT EXACTLY DO WE EMBED (CRITICAL)
+Do not embed raw slide text. That’s noisy and kills recall alignment.
+Canonical Embedding Text (per chunk)
+Create a deterministic string from meaningful fields only:
+
+[PRIMARY_TOPIC]
+[SECONDARY_TOPICS]
+
+[COMPRESSED_TEXT]
+
+[KEY SIGNALS]
+- definition_like: true
+- contains_formula: false
+- conceptual_depth: high
+
+
+Why this works
+Topic anchors stabilize retrieval
+Compressed text captures exam intent
+Signals bias similarity toward learning utility
+This string is what you embed—always.
+
+2) EMBEDDING MODEL SELECTION (OPEN-SOURCE, GPU-FRIENDLY)
+Primary Recommendation (No Debate)
+BAAI / bge-small-en-v1.5
+Excellent semantic alignment
+Lightweight
+Proven in RAG systems
+Runs comfortably on RTX 4050
+
+Alternative (If you want max accuracy)
+bge-base-en-v1.5
+Better nuance
+Slightly higher VRAM
+Still safe on 6GB with batching
+
+Hard rule:
+Use the same embedding model everywhere (creation, merge checks, retrieval). Mixing models destroys distance consistency.
+
+3) VECTOR STORE STRATEGY (KEEP IT SIMPLE)
+Use:
+FAISS (cosine similarity)
+Indexing Policy
+One global index per unit
+Optional secondary index per topic cluster
+
+This lets you:
+Merge within a unit
+Retrieve across all PPTs seamlessly
+
+4) SIMILARITY METRICS (NUMBERS THAT ACTUALLY WORK)
+Primary Metric
+Cosine similarity
+Threshold Bands (This Is Important)
+Similarity Score	Action
+≥ 0.88			Auto-merge (LLM validates & consolidates)
+0.75 – 0.88		LLM decision (merge vs link)
+0.60 – 0.75		Keep separate, add relation
+< 0.60			Ignore (new concept)
+
+Opinionated truth:
+If you auto-merge below 0.85, you will corrupt concepts. Don’t do it.
+
+5) TWO-STAGE MERGE DECISION (NON-NEGOTIABLE)
+Stage A — Embedding Filter (Fast)
+Retrieve top-k similar chunks (k = 3–5)
+Apply threshold bands
+
+Stage B — LLM Arbitration (Accurate)
+Only when similarity ≥ 0.75
+Use the merge prompt you already designed
+
+This hybrid approach:
+Saves compute
+Preserves precision
+Is academically defensible
+
+6) TEMPORAL & REPETITION BIAS (SMART DETAIL)
+
+You should reward repetition across PPTs.
+
+Adjusted Similarity Score
+adjusted_score = cosine_similarity 
+               + 0.03 × repetition_count
+               + 0.02 × ppt_count
+
+
+Cap the boost to avoid runaway merges.
+
+Why this matters
+Topics repeated in revision PPTs are exam-critical
+Your system learns instructor emphasis organically
+This is a subtle but powerful differentiator.
+
+7) QUERY-TIME RETRIEVAL (RAG MODE)
+
+When generating the final visual revision output:
+Query Construction
+
+From user intent or auto-mode:
+"Fourier Transform definition formula properties"
+Retrieval
+Embed query
+Retrieve top-k chunks (k = 5–8)
+
+Sort by:
+Importance score
+Similarity
+Compression tolerance
+Then pass only these chunks to the LLM.
+
+This keeps generation:
+Focused
+Dense
+Exam-aligned
+
+8) FAILURE MODES & SAFEGUARDS (BE REAL)
+Risk: Over-merging
+Mitigation
+Conservative thresholds
+LLM justification required
+Provenance preserved
+
+Risk: Under-merging
+Mitigation
+Re-run merge pass after full unit ingestion
+Use repetition bias
+Risk: Domain drift
+Mitigation
+Anchor-based embeddings
+Attribute-aware text

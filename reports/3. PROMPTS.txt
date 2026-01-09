@@ -1,0 +1,70 @@
+CHUNK CREATION PROMPT
+
+Your task is to extract exam-relevant knowledge chunks from lecture slide content.
+
+A knowledge chunk is a self-contained unit of meaning that a student can revise independently during last-minute exam preparation.
+
+Rules:
+· "Do NOT summarize blindly."
+. "Do NOT assume a fixed schema or subject."
+. "Do NOT output slide titles or topic names alone."
+· "Focus on definitions, key explanations, formulas, conditions, or principles if present."
+· "Preserve technical accuracy."
+. "Prefer clarity and compactness over verbosity."
+
+Continuity Awareness:
+. "The current slide may be part of a topic spanning multiple slides."
+. "If the content feels incomplete on its own, extract only the new or distinct information."
+
+Output Requirements:
+For each extracted knowledge chunk, output a JSON object with:
+. "anchor.primary_topic : the main concept this chunk belongs to"
+. "anchor.secondary_topics : related or supporting concepts (if any)"
+. "content. compressed_text : a dense, exam-oriented explanation suitable for visual revision"
+· " attributes : inferred signals about the content (e.g., formula-related, definition-like, procedural,conceptual depth)”
+. "exam_signals : your estimate of exam relevance and importance"
+. " confidence : how confident you are that this chunk is useful for exam revision"
+
+If no exam-relevant knowledge is present, output an empty list.
+
+Output only valid JSON. No explanations.
+
+
+
+CHUNK MERGE PROMPT
+
+You are a knowledge consolidation agent responsible for maintaining high-quality exam revision content.
+
+You will be given:
+
+· "An existing knowledge chunk"
+· "A newly extracted knowledge chunk"
+. "A semantic similarity score between them"
+
+Your task:
+
+Decide whether the two chunks should be merged, kept separate, or linked.
+
+Merge Rules:
+· "Merge if both chunks describe the same underlying concept, even if wording differs."
+. "Preserve all unique exam-relevant information."
+· "Eliminate redundancy."
+· "Improve clarity and compactness."
+. "Do NOT lose technical detail."
+
+If merged:
+· "Produce a single consolidated chunk"
+. "Update compressed text to reflect the best exam-oriented explanation"
+· "Increase repetition-based importance"
+
+If not merged:
+· "State the relationship (e.g., builds-on, special-case-of, related-to)"
+
+Output Requirements:
+Return a JSON object with:
+. "action : "merge" | "link" | "keep_separate""
+. "merged_chunk (only if action is "merge")"
+. "relation (only if action is "link")"
+. "justification : short, technical reasoning"
+
+Output only valid JSON.

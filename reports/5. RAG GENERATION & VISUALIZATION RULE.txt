@@ -1,0 +1,146 @@
+RAG GENERATION & VISUALIZATION RULES
+(Conceptual Design)
+
+This section defines how your system thinks at revision time, not how it is coded.
+
+PART A — RAG GENERATION RULES
+(How final revision content is produced)
+
+Core Principle (Lock This)
+	RAG is used to generate exam-oriented revision views, not summaries.
+The system does selective recall, not rewriting textbooks.
+
+1. WHEN RAG IS TRIGGERED
+RAG is activated when:
+User selects:
+	a unit
+	a topic
+	a “last-minute revision” mode
+OR system auto-generates revision notes
+
+Input to RAG is intent, not documents.
+Example intent:
+“Fourier Transform – definition, formula, conditions”
+
+2. RETRIEVAL RULES (CONCEPTUAL)
+The retriever:
+Searches knowledge chunks, not slides
+Operates across all PPTs in the unit
+Uses:
+	semantic similarity
+	importance score
+	repetition signal
+Retrieval Constraints
+
+Retrieve few but dense chunks
+Never retrieve more than what fits on one revision screen
+This aligns with real exam behavior.
+
+3. CONTEXT ASSEMBLY RULES (VERY IMPORTANT)
+The LLM never sees raw PPT text.
+It only sees:
+Selected knowledge chunks
+Their compressed content
+Their attributes and exam signals
+
+Conceptual context structure:
+
+[Student Goal]
+[Retrieved Knowledge Chunks]
+[Importance & Constraints]
+
+
+This prevents hallucination and verbosity.
+
+4. RAG GENERATION RULES (LLM BEHAVIOR)
+The generation agent must follow these rules:
+Do NOT introduce new concepts
+Do NOT expand beyond retrieved chunks
+Do NOT use narrative paragraphs
+Prefer:
+	compact statements
+	formula-first presentation
+	definition-first ordering
+Optimize for visual scannability
+
+You are generating revision artifacts, not explanations.
+
+5. OUTPUT CONTRACT (NOT FORMAT-SPECIFIC)
+RAG output is structured content, not prose.
+
+Conceptually:
+Short blocks of dense text
+Each block maps to one knowledge chunk
+No filler sentences
+This output feeds the visualization layer.
+
+
+PART B — VISUALIZATION RULES
+(How dense text becomes visual revision maps)
+
+Now the critical distinction:
+	Visualization is a projection of knowledge, not a drawing of structure.
+
+6. VISUALIZATION DESIGN PRINCIPLES
+Rule 1 — Information Density Over Beauty
+Large nodes are acceptable
+Text-heavy nodes are expected
+Empty space is waste
+This is revision material, not marketing UI.
+
+Rule 2 — One Screen, One Cognitive Unit
+A single visual should cover:
+	one topic
+	or one tightly related concept grou
+Scrolling is allowed between topics, not within them
+
+Rule 3 — Grouping > Branching
+Concepts are grouped, not deeply branched
+Shallow layouts
+Minimal edge crossings
+This reduces cognitive load.
+
+Rule 4 — Visual Hierarchy Mirrors Exam Priority
+
+High-importance chunks:
+	central position
+	larger visual weight
+Supporting chunks:
+	peripheral placement
+	smaller footprint
+
+This is memory-oriented design.
+
+7. VISUAL ELEMENT TYPES (CONCEPTUAL)
+Each rendered element corresponds to a knowledge chunk, not a slide.
+
+Conceptually:
+Main concept block
+Supporting concept blocks
+Formula-focused blocks
+Condition / exception blocks
+No hard categories—layout adapts based on attributes.
+
+8. EDGE USAGE RULES (VERY RESTRICTIVE)
+Edges are used only if they aid recall.
+
+Allowed meanings:
+“depends on”
+“used in”
+“special case of”
+If an edge does not help memory → it is removed.
+
+This avoids spider-web diagrams.
+
+9. MULTIPLE MODES (DESIGN-LEVEL ONLY)
+You can define modes without implementing all of them:
+
+Last-minute mode
+	Max compression
+	Only high-importance chunks
+Normal revision mode
+	Balanced density
+Exploration mode (future)
+	More relations shown
+
+This strengthens scope without increasing workload.

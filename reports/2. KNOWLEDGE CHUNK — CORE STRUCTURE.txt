@@ -1,0 +1,201 @@
+KNOWLEDGE CHUNK MODEL (RAG-COMPATIBLE, DOMAIN-AGNOSTIC)
+
+This model is the spine of your entire project.
+If this is right, everything else becomes modular.
+
+FIRST PRINCIPLE (LOCK THIS IN)
+
+A Knowledge Chunk is NOT a node, NOT a slide, NOT a topic name.
+It is a self-contained, exam-relevant unit of meaning that can be:
+
+retrieved
+merged
+visualized
+compressed
+Everything else is metadata.
+
+HIGH-LEVEL FLOW (WITH RAG IN MIND)
+
+RAG works on chunks, not documents.
+So the chunk model must be retrieval-first.
+
+KNOWLEDGE CHUNK — CORE STRUCTURE
+1. Chunk Identity
+
+This must survive merging, updates, and re-ingestion.
+
+chunk_id: UUID
+unit_id: "UNIT_3"
+
+
+No slide IDs here. Slides are sources, not identities.
+
+2. Semantic Anchor (Most Important Field)
+
+This is what retrieval actually locks onto.
+
+anchor: {
+  "primary_topic": "Fourier Transform",
+  "secondary_topics": ["Frequency Domain", "Signal Analysis"]
+}
+
+
+Why this matters:
+
+Enables topic continuity
+Allows cross-PPT merging
+Keeps domain-agnostic behavior
+This anchor evolves over time — it is not fixed.
+
+3. Core Content (Exam-Optimized Text)
+
+This is what the student revises.
+
+content: {
+  "compressed_text": "Fourier Transform converts a time-domain signal into its frequency-domain representation using an integral transform.",
+  "raw_expansions": [
+    "Formal definition from Lec 21",
+    "Alternate wording from Revision PPT"
+  ]
+}
+
+
+Design decision:
+
+compressed_text → visualization
+raw_expansions → future re-generation / validation
+This avoids re-running the LLM unnecessarily.
+
+4. Adaptive Attributes (NO FIXED TYPES)
+
+Instead of labels, we use signals.
+
+attributes: {
+  "contains_formula": true,
+  "conceptual_depth": "high",
+  "procedural": false,
+  "definition_like": true,
+  "visual_dependency": false
+}
+
+
+These attributes:
+
+Are inferred by the LLM
+Can grow over time
+Never block generalization
+This is how you avoid domain lock-in.
+
+5. Exam Relevance & Compression Signals
+
+Critical for “last-minute revision” mode.
+
+exam_signals: {
+  "importance_score": 0.94,
+  "repetition_count": 6,
+  "exam_likelihood": "very_high",
+  "compression_tolerance": "low"
+}
+
+
+Translation:
+
+High importance → always shown
+Low tolerance → don’t over-compress
+This is pedagogically intelligent, not cosmetic.
+
+6. Provenance (For Trust & Merging)
+
+This is what lets you merge safely.
+
+sources: [
+  {
+    "ppt": "Lec_21.pptx",
+    "slide": 3,
+    "type": "text"
+  },
+  {
+    "ppt": "Revision.pptx",
+    "slide": 5,
+    "type": "text"
+  }
+]
+
+
+Later:
+
+OCR slides → type: image_ocr
+Handwritten notes → type: scanned
+No architecture change needed.
+
+7. Graph Relations (Optional but Powerful)
+
+This enables visual structuring later.
+
+relations: [
+  {
+    "type": "builds_on",
+    "target_chunk_id": "UUID_123"
+  },
+  {
+    "type": "used_in",
+    "target_chunk_id": "UUID_456"
+  }
+]
+
+
+This is where NetworkX becomes valuable.
+
+8. Embedding Vector (RAG Backbone)
+
+This is mandatory.
+
+embedding: [ ... ]
+
+
+Generated from compressed_text + anchor
+
+Used for:
+Retrieval
+Merge decisions
+Redundancy detection
+Without this, RAG collapses.
+
+HOW RAG USES THIS MODEL (CLEARLY)
+Retrieval Phase
+
+Query: “Fourier Transform definition and formula”
+
+Vector search returns:
+
+Relevant chunks
+Across all PPTs
+Across entire unit
+Generation Phase
+
+LLM sees:
+
+Top-k chunks
+Their attributes
+Their importance scores
+
+Then:
+
+Rewrites / compresses
+Produces visual-ready revision content
+This is proper RAG, not buzzword RAG.
+MERGING LOGIC (CORE ALGORITHM IDEA)
+
+When new content arrives:
+
+Embed it
+Search similar chunks
+
+If similarity > threshold:
+Merge content
+Increase repetition count
+Update importance
+
+Else:
+Create new chunk
+This is how topic continuity is automatically handled.

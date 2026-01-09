@@ -1,0 +1,182 @@
+NEW FUNDAMENTAL CONCEPT: “KNOWLEDGE CHUNKS”
+
+
+Your atomic unit is a:
+
+Knowledge Chunk
+A semantically coherent piece of exam-relevant information that may span:
+
+Multiple slides
+Multiple PPTs
+Multiple modalities (text → OCR later)
+
+Each chunk has:
+
+Meaning
+Context
+Continuity
+Provenance (where it came from)
+
+REVISED ARCHITECTURE (AGENT-FIRST, FLEXIBLE)
+
+STAGE 1 — MULTI-PPT INGESTION (CRITICAL CHANGE)
+Input Model
+
+You no longer process “a PPT”.
+
+You process:
+
+{
+  "unit_id": "UNIT_3",
+  "ppts": ["Lec_21.pptx", "Lec_22.pptx", "Revision.pptx"]
+}
+
+
+Why this matters:
+
+Topic continuity is preserved
+Redundancy becomes signal
+Repetition boosts importance score
+This is exam-aligned by design.
+
+STAGE 2 — SLIDE NORMALIZATION & CONTEXT WINDOWING
+
+Each slide is converted into a context block, not an isolated item.
+
+Example:
+
+{
+  "global_context": "Unit 3: Signals and Systems",
+  "local_context": "Fourier Transform",
+  "slide_text": "...",
+  "previous_slides": ["..."],
+  "next_slides": ["..."]
+}
+
+
+This solves:
+
+Topic continuation across slides
+“This slide looks incomplete alone” problems
+LLMs perform far better with this.
+
+STAGE 3 — ADAPTIVE KNOWLEDGE EXTRACTION (NO FIXED SCHEMA)
+
+This is the most important design decision.
+
+What the LLM produces
+Not a fixed type — but semantic attributes.
+
+Example output:
+
+{
+  "topic": "Fourier Transform",
+  "content": "The Fourier Transform converts a time-domain signal into its frequency-domain representation.",
+  "attributes": {
+    "contains_formula": true,
+    "is_definition_like": true,
+    "exam_relevance": "high",
+    "compression_level": "dense",
+    "depends_on_prior_knowledge": true
+  },
+  "confidence": 0.91
+}
+
+
+Notice:
+
+No rigid labels
+Attributes are discoverable
+Future-proof for any domain (CS, EE, Math, Bio)
+This is how you justify generalization in your report.
+
+STAGE 4 — TOPIC CONTINUITY & MERGING (THIS IS YOUR NOVELTY)
+
+Now the hard, impressive part.
+
+Problem
+
+Same topic appears:
+Across slides
+Across PPTs
+With partial info each time
+
+Solution: Chunk Merging Agent
+
+Rules:
+Similar topic + semantic overlap → merge
+New info → append
+Redundant info → reinforce importance
+Contradictions → flag (optional bonus)
+
+Internally:
+
+Embedding similarity
+LLM-assisted merge decision
+Provenance tracking
+
+Result:
+
+{
+  "topic": "Fourier Transform",
+  "merged_from": ["Lec21-S3", "Lec22-S1", "Revision-S5"],
+  "content": "… consolidated, exam-focused explanation …",
+  "importance_score": 0.97
+}
+
+
+This is far beyond slide summarization.
+
+STAGE 5 — GRAPH AS A MEMORY STRUCTURE (NOT A DIAGRAM)
+
+Now NetworkX comes in — but not as a drawing tool.
+
+Nodes
+
+Knowledge Chunks
+Large, content-dense
+Mutable
+
+Edges
+
+“builds-on”
+“used-in”
+“special-case-of”
+“often-asked-with”
+
+This graph models how students revise, not how slides are ordered.
+
+That’s a strong academic argument.
+
+STAGE 6 — VISUAL REVISION MAP (LAST STEP, NOT FIRST)
+
+Visualization is now:
+
+A projection of the graph
+
+Filtered by:
+
+Time available (5 min / 15 min)
+Exam weight
+User-selected topic
+One screen = one revision capsule.
+
+Not a spider web.
+
+IMAGE SLIDES & OCR (FUTURE, CLEANLY JUSTIFIED)
+
+You are doing the right thing by deferring OCR.
+
+How to write this in the report
+
+“Currently, the system processes textual slide content. Future work includes integrating OCR-based visual text extraction to handle image-heavy slides.”
+
+Technically:
+
+Tesseract / PaddleOCR
+
+Same pipeline afterward
+
+Zero architectural change needed
+
+That’s good design.

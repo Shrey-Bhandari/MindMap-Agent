@@ -1,0 +1,183 @@
+EVALUATION FRAMEWORK (3 AXES)
+Your system is evaluated on three independent axes:
+Knowledge Quality
+Revision Effectiveness
+System Robustness & Generality
+
+Each axis has objective metrics and success thresholds.
+
+AXIS 1 — KNOWLEDGE QUALITY METRICS
+(Is the extracted knowledge actually correct and useful?)
+
+1. Concept Coverage Ratio (CCR)
+
+What it measures:
+How much of the important syllabus content is captured.
+
+Definition:
+
+CCR = (Number of exam-relevant concepts captured by the system)
+      / (Number of exam-relevant concepts identified manually)
+
+
+How you measure it:
+Take 1 unit
+Instructor / textbook defines ~N key concepts
+Compare against generated chunks
+
+Success Criteria:
+≥ 0.80 → acceptable
+≥ 0.90 → strong
+≥ 0.95 → exceptional
+
+This metric alone shuts down “missed topics” criticism.
+
+2. Redundancy Reduction Score (RRS)
+
+What it measures:
+How well multiple PPTs are consolidated.
+
+Definition:
+
+RRS = 1 − (Final number of chunks / Raw extracted chunks)
+
+
+Interpretation:
+Higher score = better consolidation
+Shows value of merging + RAG
+
+Success Criteria:
+≥ 0.40 → system adds value
+≥ 0.55 → strong consolidation
+
+This directly validates your multi-PPT continuity claim.
+
+3. Technical Accuracy Rate (TAR)
+
+What it measures:
+Correctness of definitions, formulas, conditions.
+
+Method:
+Randomly sample chunks
+
+Verify against:
+textbook
+instructor slides
+Binary correct / incorrect
+
+Success Criteria:
+≥ 95% accuracy
+Below this, the system is not exam-safe.
+
+
+AXIS 2 — REVISION EFFECTIVENESS METRICS
+(Does this actually help a student revise faster and better?)
+
+This is where your project clearly differentiates.
+
+4. Compression Ratio (CR)
+
+What it measures:
+How much text is reduced while preserving meaning.
+
+Definition:
+CR = Raw PPT word count / Final revision content word count
+
+Interpretation:
+CR = 5 → 5× compression
+
+Success Criteria:
+5× – 8× → optimal for exams
+10× → risk of information loss
+
+This shows efficiency without oversimplification.
+
+5. Recall Support Score (RSS)
+
+What it measures:
+How well the output supports quick recall.
+
+Method (simple but powerful):
+
+Give students:
+raw text notes OR
+visual revision output
+Ask 5–10 exam-style questions
+Measure correct recall %
+
+Success Criteria:
+≥ 15–20% improvement over text notes
+Even a small test group is sufficient for final year.
+
+6. One-Screen Coverage Metric (OSCM)
+
+What it measures:
+Whether a topic fits into one cognitive view.
+
+Definition:
+% of topics whose revision content fits into one visual screen
+
+Success Criteria:
+≥ 70% topics → strong design
+≥ 85% → excellent revision usability
+This metric justifies your visualization constraints.
+
+AXIS 3 — SYSTEM ROBUSTNESS & GENERALIT
+(Does it generalize beyond “nice demo” PPTs?)
+
+7. Domain Generalization Score (DGS)
+
+What it measures:
+Whether the system works across subjects.
+Method:
+
+Test on:
+one mathematical unit
+one theory-heavy unit
+Measure CCR + TAR on both
+
+Success Criteria:
+Performance drop ≤ 10%
+
+This defends your schema-free chunk model.
+
+8. Topic Continuity Handling Rate (TCHR)
+
+What it measures:
+How well continued topics are merged.
+
+Definition:
+TCHR = Correct merges / Expected merges
+
+Where “expected merges” are identified manually.
+
+Success Criteria:
+≥ 85% correct continuity handling
+This is your core novelty metric.
+
+9. Hallucination Rate (HR)
+
+What it measures:
+Whether the system introduces unsupported content.
+
+Definition:
+HR = Hallucinated chunks / Total chunks
+
+
+Success Criteria:
+≤ 2%
+Ideal target: 0%
+
+This strongly validates your RAG discipline.
+
+OVERALL SUCCESS CRITERIA (FINAL VERDICT)
+
+Your project is considered successful if:
+CCR ≥ 0.85
+TAR ≥ 95%
+CR between 5× and 8×
+RSS improvement ≥ 15%
+TCHR ≥ 85%
+HR ≤ 2%
+
+If you hit these, the project is technically and academically strong.
