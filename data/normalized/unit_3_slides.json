@@ -1,0 +1,1122 @@
+[
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 1,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 1,
+    "title": "Cyber Security (CS) \u000bUnit 3: Asymmetric Ciphers\u000b\u000bLecture -1: Number Theory, Prime Numbers, Fermat’s and Euler’s Theorems, Testing for Primality, The Chinese Remainder Theorem",
+    "current_text": "Cyber Security (CS) \u000bUnit 3: Asymmetric Ciphers\u000b\u000bLecture -1: Number Theory, Prime Numbers, Fermat’s and Euler’s Theorems, Testing for Primality, The Chinese Remainder Theorem By Ms Prranjali Jadhav AIDS Dept",
+    "previous_context": null,
+    "next_context": "Fermat’s Little Theorem Pierre de Fermat (1601-1665) Theorem 3: (Fermat’s Little Theorem) If p is prime and a is an integer not divisible by p, then ap-1 ≡ 1 (mod p) Furthermore, for every integer a we have ap ≡ a (mod p) (proof outlined in Exercise 19) Fermat’s little theorem is useful in computing the remainders modulo p of large powers of integers. Example: Find 7222 mod 11. By Fermat’s little theorem, we know that 710 ≡ 1 (mod 11), and so (710 )k ≡ 1 (mod 11), for every positive integer k. Therefore, 7222 = 722∙10 + 2 = (710)2272 ≡\t(1)22 ∙49 ≡ 5 (mod 11). Hence, 7222 mod 11 = 5. © 2019 McGraw-Hill Education",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 3
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 2,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 2,
+    "title": "Fermat’s Little Theorem",
+    "current_text": "Fermat’s Little Theorem Pierre de Fermat (1601-1665) Theorem 3: (Fermat’s Little Theorem) If p is prime and a is an integer not divisible by p, then ap-1 ≡ 1 (mod p) Furthermore, for every integer a we have ap ≡ a (mod p) (proof outlined in Exercise 19) Fermat’s little theorem is useful in computing the remainders modulo p of large powers of integers. Example: Find 7222 mod 11. By Fermat’s little theorem, we know that 710 ≡ 1 (mod 11), and so (710 )k ≡ 1 (mod 11), for every positive integer k. Therefore, 7222 = 722∙10 + 2 = (710)2272 ≡\t(1)22 ∙49 ≡ 5 (mod 11). Hence, 7222 mod 11 = 5. © 2019 McGraw-Hill Education",
+    "previous_context": "Cyber Security (CS) \u000bUnit 3: Asymmetric Ciphers\u000b\u000bLecture -1: Number Theory, Prime Numbers, Fermat’s and Euler’s Theorems, Testing for Primality, The Chinese Remainder Theorem By Ms Prranjali Jadhav AIDS Dept",
+    "next_context": "Pseudoprimes1* By Fermat’s little theorem n > 2 is prime, where 2n-1 ≡ 1 (mod n). But if this congruence holds, n may not be prime. Composite integers n such that 2n-1 ≡ 1 (mod n) are called pseudoprimes to the base 2. Example: The integer 341 is a pseudoprime to the base 2. 341 = 11 ∙ 31 2340 ≡ 1 (mod 341) (see in Exercise 37) We can replace 2 by any integer b ≥ 2. Definition: Let b be a positive integer. If n is a composite integer, and bn-1 ≡ 1 (mod n), then n is called a pseudoprime to the base b. © 2019 McGraw-Hill Education",
+    "raw_metadata": {
+      "has_image": true,
+      "bullet_count": 15
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 3,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 3,
+    "title": "Pseudoprimes1*",
+    "current_text": "Pseudoprimes1* By Fermat’s little theorem n > 2 is prime, where 2n-1 ≡ 1 (mod n). But if this congruence holds, n may not be prime. Composite integers n such that 2n-1 ≡ 1 (mod n) are called pseudoprimes to the base 2. Example: The integer 341 is a pseudoprime to the base 2. 341 = 11 ∙ 31 2340 ≡ 1 (mod 341) (see in Exercise 37) We can replace 2 by any integer b ≥ 2. Definition: Let b be a positive integer. If n is a composite integer, and bn-1 ≡ 1 (mod n), then n is called a pseudoprime to the base b. © 2019 McGraw-Hill Education",
+    "previous_context": "Fermat’s Little Theorem Pierre de Fermat (1601-1665) Theorem 3: (Fermat’s Little Theorem) If p is prime and a is an integer not divisible by p, then ap-1 ≡ 1 (mod p) Furthermore, for every integer a we have ap ≡ a (mod p) (proof outlined in Exercise 19) Fermat’s little theorem is useful in computing the remainders modulo p of large powers of integers. Example: Find 7222 mod 11. By Fermat’s little theorem, we know that 710 ≡ 1 (mod 11), and so (710 )k ≡ 1 (mod 11), for every positive integer k. Therefore, 7222 = 722∙10 + 2 = (710)2272 ≡\t(1)22 ∙49 ≡ 5 (mod 11). Hence, 7222 mod 11 = 5. © 2019 McGraw-Hill Education",
+    "next_context": "Pseudoprimes2* Given a positive integer n, such that\t2n-1 ≡ 1 (mod n): If n does not satisfy the congruence, it is composite. If n does satisfy the congruence, it is either prime or a pseudoprime to the base 2. Doing similar tests with additional bases b, provides more evidence as to whether n is prime. Among the positive integers not exceeding a positive real number x, compared to primes, there are relatively few pseudoprimes to the base b. For example, among the positive integers less than 1010 there are 455,052,512 primes, but only 14,884 pseudoprimes to the base 2. © 2019 McGraw-Hill Education",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 10
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 4,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 4,
+    "title": "Pseudoprimes2*",
+    "current_text": "Pseudoprimes2* Given a positive integer n, such that\t2n-1 ≡ 1 (mod n): If n does not satisfy the congruence, it is composite. If n does satisfy the congruence, it is either prime or a pseudoprime to the base 2. Doing similar tests with additional bases b, provides more evidence as to whether n is prime. Among the positive integers not exceeding a positive real number x, compared to primes, there are relatively few pseudoprimes to the base b. For example, among the positive integers less than 1010 there are 455,052,512 primes, but only 14,884 pseudoprimes to the base 2. © 2019 McGraw-Hill Education",
+    "previous_context": "Pseudoprimes1* By Fermat’s little theorem n > 2 is prime, where 2n-1 ≡ 1 (mod n). But if this congruence holds, n may not be prime. Composite integers n such that 2n-1 ≡ 1 (mod n) are called pseudoprimes to the base 2. Example: The integer 341 is a pseudoprime to the base 2. 341 = 11 ∙ 31 2340 ≡ 1 (mod 341) (see in Exercise 37) We can replace 2 by any integer b ≥ 2. Definition: Let b be a positive integer. If n is a composite integer, and bn-1 ≡ 1 (mod n), then n is called a pseudoprime to the base b. © 2019 McGraw-Hill Education",
+    "next_context": "Euler’s Theorem Euler’s Theorem can be thought of as a generalization of Fermat’s little theorem. The modules in the Fermat theorem is a prime, the modulus in Euler’s theorem is an integer. The first version of Euler’s theorem is similar to the first version of the Fermat’s little theorem. if a and n are coprime, Then Let a and n be coprime. Then a φ(n) = 1 (mod n). The Second version of Euler’s theorem is similar to the second version of Fermat’s little theorem; it removes the condition that a and n should be coprime. If n= p X q, a<n, and k an integer, then a k × f(n) + 1 ≡ a (mod n)",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 9
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 5,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 5,
+    "title": "Euler’s Theorem",
+    "current_text": "Euler’s Theorem Euler’s Theorem can be thought of as a generalization of Fermat’s little theorem. The modules in the Fermat theorem is a prime, the modulus in Euler’s theorem is an integer. The first version of Euler’s theorem is similar to the first version of the Fermat’s little theorem. if a and n are coprime, Then Let a and n be coprime. Then a φ(n) = 1 (mod n). The Second version of Euler’s theorem is similar to the second version of Fermat’s little theorem; it removes the condition that a and n should be coprime. If n= p X q, a<n, and k an integer, then a k × f(n) + 1 ≡ a (mod n)",
+    "previous_context": "Pseudoprimes2* Given a positive integer n, such that\t2n-1 ≡ 1 (mod n): If n does not satisfy the congruence, it is composite. If n does satisfy the congruence, it is either prime or a pseudoprime to the base 2. Doing similar tests with additional bases b, provides more evidence as to whether n is prime. Among the positive integers not exceeding a positive real number x, compared to primes, there are relatively few pseudoprimes to the base b. For example, among the positive integers less than 1010 there are 455,052,512 primes, but only 14,884 pseudoprimes to the base 2. © 2019 McGraw-Hill Education",
+    "next_context": "Euler’s Theorem Solve  using Euler’s Theorem: a=3 and n=10. Solution: φ(n)= φ(10)={1,3,7,9}=4…relatively prime to 10 ie gcd=1 According to Euler’s Theorem, 34=1(mod 10) 81=1 mod 10 81mod 10 =1 & 1 mod 10 =1 Hence proved.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 6
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 6,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 6,
+    "title": "Euler’s Theorem",
+    "current_text": "Euler’s Theorem Solve  using Euler’s Theorem: a=3 and n=10. Solution: φ(n)= φ(10)={1,3,7,9}=4…relatively prime to 10 ie gcd=1 According to Euler’s Theorem, 34=1(mod 10) 81=1 mod 10 81mod 10 =1 & 1 mod 10 =1 Hence proved.",
+    "previous_context": "Euler’s Theorem Euler’s Theorem can be thought of as a generalization of Fermat’s little theorem. The modules in the Fermat theorem is a prime, the modulus in Euler’s theorem is an integer. The first version of Euler’s theorem is similar to the first version of the Fermat’s little theorem. if a and n are coprime, Then Let a and n be coprime. Then a φ(n) = 1 (mod n). The Second version of Euler’s theorem is similar to the second version of Fermat’s little theorem; it removes the condition that a and n should be coprime. If n= p X q, a<n, and k an integer, then a k × f(n) + 1 ≡ a (mod n)",
+    "next_context": "Euler’s Theorem Solve  using Euler’s Theorem: a=2 and n=11.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 8
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 7,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 7,
+    "title": "Euler’s Theorem",
+    "current_text": "Euler’s Theorem Solve  using Euler’s Theorem: a=2 and n=11.",
+    "previous_context": "Euler’s Theorem Solve  using Euler’s Theorem: a=3 and n=10. Solution: φ(n)= φ(10)={1,3,7,9}=4…relatively prime to 10 ie gcd=1 According to Euler’s Theorem, 34=1(mod 10) 81=1 mod 10 81mod 10 =1 & 1 mod 10 =1 Hence proved.",
+    "next_context": "Euclidean Algorithm1 Euclid (325 B.C.E. – 265 B.C.E.) The Euclidian algorithm is an efficient method for computing the greatest common divisor of two integers. It is based on the idea that gcd(a,b) is equal to gcd(a,c) when a > b and c is the remainder when a is divided by b. Example: Find\tgcd(91, 287): 287 = 91 ∙ 3 + 14 91 = 14 ∙ 6 + 7 14 =\t7 ∙ 2 + 0 Divide 287 by 91 Divide 91 by 14 Divide 14 by 7 Stopping condition gcd(287, 91) = gcd(91, 14) =\tgcd(14, 7)\t= 7 © 2019 McGraw-Hill Education",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 2
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 8,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 8,
+    "title": "Euclidean Algorithm1",
+    "current_text": "Euclidean Algorithm1 Euclid (325 B.C.E. – 265 B.C.E.) The Euclidian algorithm is an efficient method for computing the greatest common divisor of two integers. It is based on the idea that gcd(a,b) is equal to gcd(a,c) when a > b and c is the remainder when a is divided by b. Example: Find\tgcd(91, 287): 287 = 91 ∙ 3 + 14 91 = 14 ∙ 6 + 7 14 =\t7 ∙ 2 + 0 Divide 287 by 91 Divide 91 by 14 Divide 14 by 7 Stopping condition gcd(287, 91) = gcd(91, 14) =\tgcd(14, 7)\t= 7 © 2019 McGraw-Hill Education",
+    "previous_context": "Euler’s Theorem Solve  using Euler’s Theorem: a=2 and n=11.",
+    "next_context": "Euclidean Algorithm2 The Euclidean algorithm expressed in pseudocode is: procedure gcd (a, b: positive integers) x := a y := b while\ty ≠ 0 r := x mod y x := y y := r return x\t{gcd(a,b) is x} In Section 5.3, we’ll see that the time complexity of the algorithm is O (log b), where a > b. © 2019 McGraw-Hill Education",
+    "raw_metadata": {
+      "has_image": true,
+      "bullet_count": 15
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 9,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 9,
+    "title": "Euclidean Algorithm2",
+    "current_text": "Euclidean Algorithm2 The Euclidean algorithm expressed in pseudocode is: procedure gcd (a, b: positive integers) x := a y := b while\ty ≠ 0 r := x mod y x := y y := r return x\t{gcd(a,b) is x} In Section 5.3, we’ll see that the time complexity of the algorithm is O (log b), where a > b. © 2019 McGraw-Hill Education",
+    "previous_context": "Euclidean Algorithm1 Euclid (325 B.C.E. – 265 B.C.E.) The Euclidian algorithm is an efficient method for computing the greatest common divisor of two integers. It is based on the idea that gcd(a,b) is equal to gcd(a,c) when a > b and c is the remainder when a is divided by b. Example: Find\tgcd(91, 287): 287 = 91 ∙ 3 + 14 91 = 14 ∙ 6 + 7 14 =\t7 ∙ 2 + 0 Divide 287 by 91 Divide 91 by 14 Divide 14 by 7 Stopping condition gcd(287, 91) = gcd(91, 14) =\tgcd(14, 7)\t= 7 © 2019 McGraw-Hill Education",
+    "next_context": "Correctness of Euclidean Algorithm1 * Lemma 1: Let a = bq + r, where a, b, q, and r are integers. Then gcd(a,b) = gcd(b,r). Proof: Suppose that d divides both a and b. Then d also divides a − bq = r (by Theorem 1 of Section 4.1). Hence, any common divisor of a and b must also be any\tcommon divisor of b and r. Suppose that d divides both b and r. Then d also divides bq + r = a. Hence, any common divisor of a and b must also be a common divisor of b and r. Therefore, gcd(a,b) = gcd(b,r). © 2019 McGraw-Hill Education",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 11
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 10,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 10,
+    "title": "Correctness of Euclidean Algorithm1 *",
+    "current_text": "Correctness of Euclidean Algorithm1 * Lemma 1: Let a = bq + r, where a, b, q, and r are integers. Then gcd(a,b) = gcd(b,r). Proof: Suppose that d divides both a and b. Then d also divides a − bq = r (by Theorem 1 of Section 4.1). Hence, any common divisor of a and b must also be any\tcommon divisor of b and r. Suppose that d divides both b and r. Then d also divides bq + r = a. Hence, any common divisor of a and b must also be a common divisor of b and r. Therefore, gcd(a,b) = gcd(b,r). © 2019 McGraw-Hill Education",
+    "previous_context": "Euclidean Algorithm2 The Euclidean algorithm expressed in pseudocode is: procedure gcd (a, b: positive integers) x := a y := b while\ty ≠ 0 r := x mod y x := y y := r return x\t{gcd(a,b) is x} In Section 5.3, we’ll see that the time complexity of the algorithm is O (log b), where a > b. © 2019 McGraw-Hill Education",
+    "next_context": "Correctness of Euclidean Algorithm2 * Suppose that a and b are positive integers\twith a ≥ b. Let r0 = a and r1 = b. Successive applications of the division algorithm yields: 0  r2  r1 , 0  r3  r2 , 0  rn  rn1 , r0  r1q1  r2 r1  r2q2  r3 . . . rn2  rn1qn1  r2 rn1  rn qn . Eventually, a remainder of zero occurs in the sequence of terms: a = r0 > r1 > r2 > ∙ ∙ ∙ ≥ 0. The sequence can’t contain more than a terms. By Lemma 1 gcd(a,b) = gcd(r0,r1) = ∙ ∙ ∙ = gcd(rn-1,rn) = gcd(rn , 0) = rn. Hence the greatest common divisor is the last nonzero remainder in the sequence of divisions. © 2019 McGraw-Hill Education",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 10
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 11,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 11,
+    "title": "Correctness of Euclidean Algorithm2 *",
+    "current_text": "Correctness of Euclidean Algorithm2 * Suppose that a and b are positive integers\twith a ≥ b. Let r0 = a and r1 = b. Successive applications of the division algorithm yields: 0  r2  r1 , 0  r3  r2 , 0  rn  rn1 , r0  r1q1  r2 r1  r2q2  r3 . . . rn2  rn1qn1  r2 rn1  rn qn . Eventually, a remainder of zero occurs in the sequence of terms: a = r0 > r1 > r2 > ∙ ∙ ∙ ≥ 0. The sequence can’t contain more than a terms. By Lemma 1 gcd(a,b) = gcd(r0,r1) = ∙ ∙ ∙ = gcd(rn-1,rn) = gcd(rn , 0) = rn. Hence the greatest common divisor is the last nonzero remainder in the sequence of divisions. © 2019 McGraw-Hill Education",
+    "previous_context": "Correctness of Euclidean Algorithm1 * Lemma 1: Let a = bq + r, where a, b, q, and r are integers. Then gcd(a,b) = gcd(b,r). Proof: Suppose that d divides both a and b. Then d also divides a − bq = r (by Theorem 1 of Section 4.1). Hence, any common divisor of a and b must also be any\tcommon divisor of b and r. Suppose that d divides both b and r. Then d also divides bq + r = a. Hence, any common divisor of a and b must also be a common divisor of b and r. Therefore, gcd(a,b) = gcd(b,r). © 2019 McGraw-Hill Education",
+    "next_context": "Testing for Primality Primality testing is the process of determining whether a given number is prime or composite (not prime). What is a Prime Number? A prime number is a number greater than 1 that has no positive divisors other than 1 and itself.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 16
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 12,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 12,
+    "title": "Testing for Primality",
+    "current_text": "Testing for Primality Primality testing is the process of determining whether a given number is prime or composite (not prime). What is a Prime Number? A prime number is a number greater than 1 that has no positive divisors other than 1 and itself.",
+    "previous_context": "Correctness of Euclidean Algorithm2 * Suppose that a and b are positive integers\twith a ≥ b. Let r0 = a and r1 = b. Successive applications of the division algorithm yields: 0  r2  r1 , 0  r3  r2 , 0  rn  rn1 , r0  r1q1  r2 r1  r2q2  r3 . . . rn2  rn1qn1  r2 rn1  rn qn . Eventually, a remainder of zero occurs in the sequence of terms: a = r0 > r1 > r2 > ∙ ∙ ∙ ≥ 0. The sequence can’t contain more than a terms. By Lemma 1 gcd(a,b) = gcd(r0,r1) = ∙ ∙ ∙ = gcd(rn-1,rn) = gcd(rn , 0) = rn. Hence the greatest common divisor is the last nonzero remainder in the sequence of divisions. © 2019 McGraw-Hill Education",
+    "next_context": "✅ Basic Methods for Primality Testing",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 4
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 13,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 13,
+    "title": "✅ Basic Methods for Primality Testing",
+    "current_text": "✅ Basic Methods for Primality Testing",
+    "previous_context": "Testing for Primality Primality testing is the process of determining whether a given number is prime or composite (not prime). What is a Prime Number? A prime number is a number greater than 1 that has no positive divisors other than 1 and itself.",
+    "next_context": "✅ Basic Methods for Primality Testing 2. Sieve of Eratosthenes Used to find all primes up to a limit N. Mark multiples of each number starting from 2. Remaining unmarked numbers are primes. Useful for generating many primes, not checking a single large one.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 1
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 14,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 14,
+    "title": "✅ Basic Methods for Primality Testing",
+    "current_text": "✅ Basic Methods for Primality Testing 2. Sieve of Eratosthenes Used to find all primes up to a limit N. Mark multiples of each number starting from 2. Remaining unmarked numbers are primes. Useful for generating many primes, not checking a single large one.",
+    "previous_context": "✅ Basic Methods for Primality Testing",
+    "next_context": "✅ Basic Methods for Primality Testing 3. Fermat Primality Test (Probabilistic) Based on Fermat’s Little Theorem:\u000bIf n is prime, then for any integer a,\u000ba n−1≡1(mod n) Choose random a, and check the congruence. If it fails, n is composite. If it passes for several a, n is probably prime.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 6
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 15,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 15,
+    "title": "✅ Basic Methods for Primality Testing",
+    "current_text": "✅ Basic Methods for Primality Testing 3. Fermat Primality Test (Probabilistic) Based on Fermat’s Little Theorem:\u000bIf n is prime, then for any integer a,\u000ba n−1≡1(mod n) Choose random a, and check the congruence. If it fails, n is composite. If it passes for several a, n is probably prime.",
+    "previous_context": "✅ Basic Methods for Primality Testing 2. Sieve of Eratosthenes Used to find all primes up to a limit N. Mark multiples of each number starting from 2. Remaining unmarked numbers are primes. Useful for generating many primes, not checking a single large one.",
+    "next_context": "✅ Basic Methods for Primality Testing 4. Miller-Rabin Primality Test (Better Probabilistic) An improved version of Fermat's test with multiple checks. Repeated testing reduces the probability of error. ✔️ Widely used in cryptography (e.g., RSA key generation).\u000b✔️ Fast and reliable for large numbers.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 6
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 16,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 16,
+    "title": "✅ Basic Methods for Primality Testing",
+    "current_text": "✅ Basic Methods for Primality Testing 4. Miller-Rabin Primality Test (Better Probabilistic) An improved version of Fermat's test with multiple checks. Repeated testing reduces the probability of error. ✔️ Widely used in cryptography (e.g., RSA key generation).\u000b✔️ Fast and reliable for large numbers.",
+    "previous_context": "✅ Basic Methods for Primality Testing 3. Fermat Primality Test (Probabilistic) Based on Fermat’s Little Theorem:\u000bIf n is prime, then for any integer a,\u000ba n−1≡1(mod n) Choose random a, and check the congruence. If it fails, n is composite. If it passes for several a, n is probably prime.",
+    "next_context": "✅ Basic Methods for Primality Testing 5. AKS Primality Test (Deterministic) First polynomial-time deterministic primality test. Always correct — not based on probability. But:\u000b❌ Slower than Miller-Rabin for practical usage.\u000b✅ Great for theoretical purposes.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 5
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 17,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 17,
+    "title": "✅ Basic Methods for Primality Testing",
+    "current_text": "✅ Basic Methods for Primality Testing 5. AKS Primality Test (Deterministic) First polynomial-time deterministic primality test. Always correct — not based on probability. But:\u000b❌ Slower than Miller-Rabin for practical usage.\u000b✅ Great for theoretical purposes.",
+    "previous_context": "✅ Basic Methods for Primality Testing 4. Miller-Rabin Primality Test (Better Probabilistic) An improved version of Fermat's test with multiple checks. Repeated testing reduces the probability of error. ✔️ Widely used in cryptography (e.g., RSA key generation).\u000b✔️ Fast and reliable for large numbers.",
+    "next_context": "The Chinese Remainder Theorem1* In the first century, the Chinese mathematician Sun-Tsu asked: There are certain things whose number is unknown. When divided by 3, the remainder is 2; when divided by 5, the remainder is 3; when divided by 7, the remainder is 2. What will be the number of things? This puzzle can be translated into the\tsolution of the system of congruences: x ≡ 2 ( mod 3), x ≡ 3 ( mod 5), x ≡ 2 ( mod 7)? We’ll see how the theorem that is known as the Chinese Remainder Theorem can be used to solve Sun-Tsu’s problem. © 2019 McGraw-Hill Education",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 5
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 18,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 18,
+    "title": "The Chinese Remainder Theorem1*",
+    "current_text": "The Chinese Remainder Theorem1* In the first century, the Chinese mathematician Sun-Tsu asked: There are certain things whose number is unknown. When divided by 3, the remainder is 2; when divided by 5, the remainder is 3; when divided by 7, the remainder is 2. What will be the number of things? This puzzle can be translated into the\tsolution of the system of congruences: x ≡ 2 ( mod 3), x ≡ 3 ( mod 5), x ≡ 2 ( mod 7)? We’ll see how the theorem that is known as the Chinese Remainder Theorem can be used to solve Sun-Tsu’s problem. © 2019 McGraw-Hill Education",
+    "previous_context": "✅ Basic Methods for Primality Testing 5. AKS Primality Test (Deterministic) First polynomial-time deterministic primality test. Always correct — not based on probability. But:\u000b❌ Slower than Miller-Rabin for practical usage.\u000b✅ Great for theoretical purposes.",
+    "next_context": "What is the Chinese Remainder Theorem? © 2019 McGraw-Hill Education CRT solves systems of simultaneous congruences with pairwise coprime moduli. It guarantees a unique solution modulo the product of the moduli.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 10
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 19,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 19,
+    "title": "What is the Chinese Remainder Theorem?",
+    "current_text": "What is the Chinese Remainder Theorem? © 2019 McGraw-Hill Education CRT solves systems of simultaneous congruences with pairwise coprime moduli. It guarantees a unique solution modulo the product of the moduli.",
+    "previous_context": "The Chinese Remainder Theorem1* In the first century, the Chinese mathematician Sun-Tsu asked: There are certain things whose number is unknown. When divided by 3, the remainder is 2; when divided by 5, the remainder is 3; when divided by 7, the remainder is 2. What will be the number of things? This puzzle can be translated into the\tsolution of the system of congruences: x ≡ 2 ( mod 3), x ≡ 3 ( mod 5), x ≡ 2 ( mod 7)? We’ll see how the theorem that is known as the Chinese Remainder Theorem can be used to solve Sun-Tsu’s problem. © 2019 McGraw-Hill Education",
+    "next_context": "The Chinese Remainder Theorem3* Solve the following system of congruences: x≡2(mod3) x≡3(mod4) x≡2(mod5) Solution: Step 1 – Verify Coprime Moduli & Compute M Check: All moduli (3, 4, 5) are pairwise coprime Compute M=3×4×5=60",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 4
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 20,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 20,
+    "title": "The Chinese Remainder Theorem3*",
+    "current_text": "The Chinese Remainder Theorem3* Solve the following system of congruences: x≡2(mod3) x≡3(mod4) x≡2(mod5) Solution: Step 1 – Verify Coprime Moduli & Compute M Check: All moduli (3, 4, 5) are pairwise coprime Compute M=3×4×5=60",
+    "previous_context": "What is the Chinese Remainder Theorem? © 2019 McGraw-Hill Education CRT solves systems of simultaneous congruences with pairwise coprime moduli. It guarantees a unique solution modulo the product of the moduli.",
+    "next_context": "The Chinese Remainder Theorem3* Step 2 – Compute Mi​ and Modular Inverses M1=60/3=20, \tInverse of 20  \tmod  3=2…. y1 M2=60/4=15,\tInverse of 15 \tmod  4=3…. y2 M3=60/5=12,\tInverse of 12\tmod  5=3…. y3 Step 3 – Apply CRT Formula x=(a1⋅M1⋅y1+a2⋅M2⋅y2+a3⋅M3⋅y3) mod  M x=(2⋅20⋅2+3⋅15⋅3+2⋅12⋅3) mod  60 x=(80+135+72)mod  60=287 mod  60 = 47 ​",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 9
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 21,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 21,
+    "title": "The Chinese Remainder Theorem3*",
+    "current_text": "The Chinese Remainder Theorem3* Step 2 – Compute Mi​ and Modular Inverses M1=60/3=20, \tInverse of 20  \tmod  3=2…. y1 M2=60/4=15,\tInverse of 15 \tmod  4=3…. y2 M3=60/5=12,\tInverse of 12\tmod  5=3…. y3 Step 3 – Apply CRT Formula x=(a1⋅M1⋅y1+a2⋅M2⋅y2+a3⋅M3⋅y3) mod  M x=(2⋅20⋅2+3⋅15⋅3+2⋅12⋅3) mod  60 x=(80+135+72)mod  60=287 mod  60 = 47 ​",
+    "previous_context": "The Chinese Remainder Theorem3* Solve the following system of congruences: x≡2(mod3) x≡3(mod4) x≡2(mod5) Solution: Step 1 – Verify Coprime Moduli & Compute M Check: All moduli (3, 4, 5) are pairwise coprime Compute M=3×4×5=60",
+    "next_context": "The Chinese Remainder Theorem3* Final Answer & Verification Final Answer: x = Verification: 47mod3=2 ✔️ 47mod4=3 ✔️ 47mod5=2 ✔️ 47 mod  60 [ x ≡ 2 mod 3 ]     [ x ≡ 3 mod 4 ]     [ x ≡ 2 mod 5 ] \\              \t\t|                \t/ ----> Apply CRT ----> [ x ≡ 47 mod 60 ]",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 7
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 22,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 22,
+    "title": "The Chinese Remainder Theorem3*",
+    "current_text": "The Chinese Remainder Theorem3* Final Answer & Verification Final Answer: x = Verification: 47mod3=2 ✔️ 47mod4=3 ✔️ 47mod5=2 ✔️ 47 mod  60 [ x ≡ 2 mod 3 ]     [ x ≡ 3 mod 4 ]     [ x ≡ 2 mod 5 ] \\              \t\t|                \t/ ----> Apply CRT ----> [ x ≡ 47 mod 60 ]",
+    "previous_context": "The Chinese Remainder Theorem3* Step 2 – Compute Mi​ and Modular Inverses M1=60/3=20, \tInverse of 20  \tmod  3=2…. y1 M2=60/4=15,\tInverse of 15 \tmod  4=3…. y2 M3=60/5=12,\tInverse of 12\tmod  5=3…. y3 Step 3 – Apply CRT Formula x=(a1⋅M1⋅y1+a2⋅M2⋅y2+a3⋅M3⋅y3) mod  M x=(2⋅20⋅2+3⋅15⋅3+2⋅12⋅3) mod  60 x=(80+135+72)mod  60=287 mod  60 = 47 ​",
+    "next_context": "The Chinese Remainder Theorem4* Example 2: Consider the 3 congruences from Sun-Tsu’s problem: x ≡ 2 ( mod 3),\tx ≡ 3 ( mod 5), x ≡ 2 ( mod 7). = m/3 = 35, M2\t= m/5 = 21, M3\t= m/7 = Let m = 3∙ 5 ∙ 7 = 105,   M1 15. We see that 2 is an inverse of M1 1 is an inverse of M2 1 is an inverse of M3 = 35 modulo 3 since 35 ∙ 2 ≡ 2 ∙ 2 ≡ 1 (mod 3) = 21 modulo 5 since 21 ≡ 1 (mod 5) = 15 modulo 7 since 15 ≡ 1 (mod 7) Hence, x = a1M1y1 + a2M2y2 + a3M3y3 = 2 ∙ 35 ∙ 2 + 3 ∙ 21 ∙ 1 + 2 ∙ 15 ∙ 1 = 233 ≡ 23 (mod 105) We have shown that 23 is the smallest positive integer that is a simultaneous solution. Check it! © 2019 McGraw-Hill Education",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 12
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 23,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 23,
+    "title": "The Chinese Remainder Theorem4*",
+    "current_text": "The Chinese Remainder Theorem4* Example 2: Consider the 3 congruences from Sun-Tsu’s problem: x ≡ 2 ( mod 3),\tx ≡ 3 ( mod 5), x ≡ 2 ( mod 7). = m/3 = 35, M2\t= m/5 = 21, M3\t= m/7 = Let m = 3∙ 5 ∙ 7 = 105,   M1 15. We see that 2 is an inverse of M1 1 is an inverse of M2 1 is an inverse of M3 = 35 modulo 3 since 35 ∙ 2 ≡ 2 ∙ 2 ≡ 1 (mod 3) = 21 modulo 5 since 21 ≡ 1 (mod 5) = 15 modulo 7 since 15 ≡ 1 (mod 7) Hence, x = a1M1y1 + a2M2y2 + a3M3y3 = 2 ∙ 35 ∙ 2 + 3 ∙ 21 ∙ 1 + 2 ∙ 15 ∙ 1 = 233 ≡ 23 (mod 105) We have shown that 23 is the smallest positive integer that is a simultaneous solution. Check it! © 2019 McGraw-Hill Education",
+    "previous_context": "The Chinese Remainder Theorem3* Final Answer & Verification Final Answer: x = Verification: 47mod3=2 ✔️ 47mod4=3 ✔️ 47mod5=2 ✔️ 47 mod  60 [ x ≡ 2 mod 3 ]     [ x ≡ 3 mod 4 ]     [ x ≡ 2 mod 5 ] \\              \t\t|                \t/ ----> Apply CRT ----> [ x ≡ 47 mod 60 ]",
+    "next_context": "🧠 Discrete Logarithms A discrete logarithm is the logarithm in the context of modular arithmetic, commonly used in cryptography (like Diffie-Hellman key exchange, ElGamal encryption). 🧩 Definition In regular math: If ax=b, then x=logab In modular arithmetic: If ax≡b (mod n) ,  then x is called the discrete logarithm of b base a mod n x= logab (mod n)",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 19
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 24,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 24,
+    "title": "🧠 Discrete Logarithms",
+    "current_text": "🧠 Discrete Logarithms A discrete logarithm is the logarithm in the context of modular arithmetic, commonly used in cryptography (like Diffie-Hellman key exchange, ElGamal encryption). 🧩 Definition In regular math: If ax=b, then x=logab In modular arithmetic: If ax≡b (mod n) ,  then x is called the discrete logarithm of b base a mod n x= logab (mod n)",
+    "previous_context": "The Chinese Remainder Theorem4* Example 2: Consider the 3 congruences from Sun-Tsu’s problem: x ≡ 2 ( mod 3),\tx ≡ 3 ( mod 5), x ≡ 2 ( mod 7). = m/3 = 35, M2\t= m/5 = 21, M3\t= m/7 = Let m = 3∙ 5 ∙ 7 = 105,   M1 15. We see that 2 is an inverse of M1 1 is an inverse of M2 1 is an inverse of M3 = 35 modulo 3 since 35 ∙ 2 ≡ 2 ∙ 2 ≡ 1 (mod 3) = 21 modulo 5 since 21 ≡ 1 (mod 5) = 15 modulo 7 since 15 ≡ 1 (mod 7) Hence, x = a1M1y1 + a2M2y2 + a3M3y3 = 2 ∙ 35 ∙ 2 + 3 ∙ 21 ∙ 1 + 2 ∙ 15 ∙ 1 = 233 ≡ 23 (mod 105) We have shown that 23 is the smallest positive integer that is a simultaneous solution. Check it! © 2019 McGraw-Hill Education",
+    "next_context": "🧠 Discrete Logarithms",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 8
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 25,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 25,
+    "title": "🧠 Discrete Logarithms",
+    "current_text": "🧠 Discrete Logarithms",
+    "previous_context": "🧠 Discrete Logarithms A discrete logarithm is the logarithm in the context of modular arithmetic, commonly used in cryptography (like Diffie-Hellman key exchange, ElGamal encryption). 🧩 Definition In regular math: If ax=b, then x=logab In modular arithmetic: If ax≡b (mod n) ,  then x is called the discrete logarithm of b base a mod n x= logab (mod n)",
+    "next_context": "🧠 Discrete Logarithms",
+    "raw_metadata": {
+      "has_image": true,
+      "bullet_count": 1
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 26,
+    "ppt_name": "3_1.pptx",
+    "slide_number": 26,
+    "title": "🧠 Discrete Logarithms",
+    "current_text": "🧠 Discrete Logarithms",
+    "previous_context": "🧠 Discrete Logarithms",
+    "next_context": null,
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 1
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 27,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 1,
+    "title": "Cyber Security (CS) \u000bUnit 3: Asymmetric Ciphers\u000b\u000bLecture -3: Principles of Public Key Cryptography",
+    "current_text": "Cyber Security (CS) \u000bUnit 3: Asymmetric Ciphers\u000b\u000bLecture -3: Principles of Public Key Cryptography By Ms Prranjali Jadhav AIDS Dept",
+    "previous_context": null,
+    "next_context": "Contents Number Theory, Prime Numbers, Fermat’s and Euler’s Theorems, Testing for Primality, The Chinese Remainder Theorem, Discrete Logarithms, Public-Key Cryptography, Principles of Public-Key Cryptosystems, The RSA Algorithm, Diffie-Hellman Key Exchange, ElGamal Cryptosystem, Elliptic Curve Cryptography",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 3
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 28,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 2,
+    "title": "Contents",
+    "current_text": "Contents Number Theory, Prime Numbers, Fermat’s and Euler’s Theorems, Testing for Primality, The Chinese Remainder Theorem, Discrete Logarithms, Public-Key Cryptography, Principles of Public-Key Cryptosystems, The RSA Algorithm, Diffie-Hellman Key Exchange, ElGamal Cryptosystem, Elliptic Curve Cryptography",
+    "previous_context": "Cyber Security (CS) \u000bUnit 3: Asymmetric Ciphers\u000b\u000bLecture -3: Principles of Public Key Cryptography By Ms Prranjali Jadhav AIDS Dept",
+    "next_context": "PRINCIPLES OF PUBLIC KEY CRYPTOGRAPHY The concept of public key cryptography evolved from an attempt to attack two of the most difficult problems associated with symmetric encryption. Key distribution under symmetric key encryption requires either (1) that two communicants already share a key, which someone has been distributed to them or (2) the use of a key distribution center. Digital signatures.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 9
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 29,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 3,
+    "title": "PRINCIPLES OF PUBLIC KEY CRYPTOGRAPHY",
+    "current_text": "PRINCIPLES OF PUBLIC KEY CRYPTOGRAPHY The concept of public key cryptography evolved from an attempt to attack two of the most difficult problems associated with symmetric encryption. Key distribution under symmetric key encryption requires either (1) that two communicants already share a key, which someone has been distributed to them or (2) the use of a key distribution center. Digital signatures.",
+    "previous_context": "Contents Number Theory, Prime Numbers, Fermat’s and Euler’s Theorems, Testing for Primality, The Chinese Remainder Theorem, Discrete Logarithms, Public-Key Cryptography, Principles of Public-Key Cryptosystems, The RSA Algorithm, Diffie-Hellman Key Exchange, ElGamal Cryptosystem, Elliptic Curve Cryptography",
+    "next_context": "Public key algorithms rely on one key for encryption and a different but related key for decryption. These algorithms have the following important characteristics: It is computationally infeasible to determine the decryption key given only the knowledge of the cryptographic algorithm and the encryption key. In addition, some algorithms, such as RSA, also exhibit the following characteristic: Either of the two related keys can be used for encryption, with the other used for decryption. 1. Public key cryptosystems",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 4
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 30,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 4,
+    "title": "1. Public key cryptosystems",
+    "current_text": "Public key algorithms rely on one key for encryption and a different but related key for decryption. These algorithms have the following important characteristics: It is computationally infeasible to determine the decryption key given only the knowledge of the cryptographic algorithm and the encryption key. In addition, some algorithms, such as RSA, also exhibit the following characteristic: Either of the two related keys can be used for encryption, with the other used for decryption. 1. Public key cryptosystems",
+    "previous_context": "PRINCIPLES OF PUBLIC KEY CRYPTOGRAPHY The concept of public key cryptography evolved from an attempt to attack two of the most difficult problems associated with symmetric encryption. Key distribution under symmetric key encryption requires either (1) that two communicants already share a key, which someone has been distributed to them or (2) the use of a key distribution center. Digital signatures.",
+    "next_context": "The essential steps are the following: Each user generates a pair of keys to be used for encryption and decryption of messages. Each user places one of the two keys in a public register or other accessible file. This is the public key. The companion key is kept private. If A wishes to send a confidential message to B, A encrypts the message using B’s public key. When B receives the message, it decrypts using its private key. No other recipient can decrypt the message because only B knows B’s private key. With this approach, all participants have access to public keys and private keys are generated locally by each participant and therefore, need not be distributed. As long as a system controls its private key, its incoming communication is secure.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 6
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 31,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 5,
+    "title": null,
+    "current_text": "The essential steps are the following: Each user generates a pair of keys to be used for encryption and decryption of messages. Each user places one of the two keys in a public register or other accessible file. This is the public key. The companion key is kept private. If A wishes to send a confidential message to B, A encrypts the message using B’s public key. When B receives the message, it decrypts using its private key. No other recipient can decrypt the message because only B knows B’s private key. With this approach, all participants have access to public keys and private keys are generated locally by each participant and therefore, need not be distributed. As long as a system controls its private key, its incoming communication is secure.",
+    "previous_context": "Public key algorithms rely on one key for encryption and a different but related key for decryption. These algorithms have the following important characteristics: It is computationally infeasible to determine the decryption key given only the knowledge of the cryptographic algorithm and the encryption key. In addition, some algorithms, such as RSA, also exhibit the following characteristic: Either of the two related keys can be used for encryption, with the other used for decryption. 1. Public key cryptosystems",
+    "next_context": "Let the plaintext be X=[X1, X2, X3, …,Xm] where m is the number of letters in some finite alphabets. Suppose A wishes to send a message to B. B generates a pair of keys: a public key KUb and a private key KRb. KRb is known only to B, whereas KUb is publicly available and therefore accessible by A. With the message X and encryption key KUb as input, A forms the cipher text : Y=[Y1, Y2, Y3, … Yn]., i.e., Y=E(KUb(X)) The receiver can decrypt it using the private key KRb. i.e., X=D(KRb()). The encrypted message serves as a digital signature.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 6
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 32,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 6,
+    "title": null,
+    "current_text": "Let the plaintext be X=[X1, X2, X3, …,Xm] where m is the number of letters in some finite alphabets. Suppose A wishes to send a message to B. B generates a pair of keys: a public key KUb and a private key KRb. KRb is known only to B, whereas KUb is publicly available and therefore accessible by A. With the message X and encryption key KUb as input, A forms the cipher text : Y=[Y1, Y2, Y3, … Yn]., i.e., Y=E(KUb(X)) The receiver can decrypt it using the private key KRb. i.e., X=D(KRb()). The encrypted message serves as a digital signature.",
+    "previous_context": "The essential steps are the following: Each user generates a pair of keys to be used for encryption and decryption of messages. Each user places one of the two keys in a public register or other accessible file. This is the public key. The companion key is kept private. If A wishes to send a confidential message to B, A encrypts the message using B’s public key. When B receives the message, it decrypts using its private key. No other recipient can decrypt the message because only B knows B’s private key. With this approach, all participants have access to public keys and private keys are generated locally by each participant and therefore, need not be distributed. As long as a system controls its private key, its incoming communication is secure.",
+    "next_context": "It is important to emphasize that the encryption process just described does not provide confidentiality. There is no protection of confidentiality. It is however, possible to provide both the authentication and confidentiality by a double use of the public scheme. Initially, the message is encrypted using the sender’s private key. This provides the digital signature. Next, we encrypt again, using the receiver’s public key. The final ciphertext can be decrypted only by the intended receiver, who alone has the matching private key KRb and sender’s public key KUa. Thus confidentiality is provided. 1 2 Cipher Text 3 4",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 3
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 33,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 7,
+    "title": null,
+    "current_text": "It is important to emphasize that the encryption process just described does not provide confidentiality. There is no protection of confidentiality. It is however, possible to provide both the authentication and confidentiality by a double use of the public scheme. Initially, the message is encrypted using the sender’s private key. This provides the digital signature. Next, we encrypt again, using the receiver’s public key. The final ciphertext can be decrypted only by the intended receiver, who alone has the matching private key KRb and sender’s public key KUa. Thus confidentiality is provided. 1 2 Cipher Text 3 4",
+    "previous_context": "Let the plaintext be X=[X1, X2, X3, …,Xm] where m is the number of letters in some finite alphabets. Suppose A wishes to send a message to B. B generates a pair of keys: a public key KUb and a private key KRb. KRb is known only to B, whereas KUb is publicly available and therefore accessible by A. With the message X and encryption key KUb as input, A forms the cipher text : Y=[Y1, Y2, Y3, … Yn]., i.e., Y=E(KUb(X)) The receiver can decrypt it using the private key KRb. i.e., X=D(KRb()). The encrypted message serves as a digital signature.",
+    "next_context": "2. Requirements for public key cryptography It is computationally easy for a party B to generate a pair [KUb , KRb]. It is computationally easy for a sender A, knowing the public key and the message to be encrypted M, to generate the corresponding ciphertext: C= Z = E[KUb(E[KRa(X)]]. It is computationally easy for the receiver B to decrypt the resulting ciphertext using the private key to recover the original message: M = X = D[KUa [E(KUb (Y))]] It is computationally infeasible for an opponent, knowing the public key KUb, to determine the private key KRb. It is computationally infeasible for an opponent, knowing the public key KUb, and a ciphertext C, to recover the original message M. The encryption and decryption functions can be applied in either order:   M = EKUb [DKRb (M) = DKUb [EKRb (M)]",
+    "raw_metadata": {
+      "has_image": true,
+      "bullet_count": 10
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 34,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 8,
+    "title": "2. Requirements for public key cryptography",
+    "current_text": "2. Requirements for public key cryptography It is computationally easy for a party B to generate a pair [KUb , KRb]. It is computationally easy for a sender A, knowing the public key and the message to be encrypted M, to generate the corresponding ciphertext: C= Z = E[KUb(E[KRa(X)]]. It is computationally easy for the receiver B to decrypt the resulting ciphertext using the private key to recover the original message: M = X = D[KUa [E(KUb (Y))]] It is computationally infeasible for an opponent, knowing the public key KUb, to determine the private key KRb. It is computationally infeasible for an opponent, knowing the public key KUb, and a ciphertext C, to recover the original message M. The encryption and decryption functions can be applied in either order:   M = EKUb [DKRb (M) = DKUb [EKRb (M)]",
+    "previous_context": "It is important to emphasize that the encryption process just described does not provide confidentiality. There is no protection of confidentiality. It is however, possible to provide both the authentication and confidentiality by a double use of the public scheme. Initially, the message is encrypted using the sender’s private key. This provides the digital signature. Next, we encrypt again, using the receiver’s public key. The final ciphertext can be decrypted only by the intended receiver, who alone has the matching private key KRb and sender’s public key KUa. Thus confidentiality is provided. 1 2 Cipher Text 3 4",
+    "next_context": "Public key cryptanalysis Public key encryption scheme is vulnerable to a brute force attack. The counter measure is to use large keys. Next----> Public Key Cryptography Algorithms",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 9
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 35,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 9,
+    "title": "Public key cryptanalysis",
+    "current_text": "Public key cryptanalysis Public key encryption scheme is vulnerable to a brute force attack. The counter measure is to use large keys. Next----> Public Key Cryptography Algorithms",
+    "previous_context": "2. Requirements for public key cryptography It is computationally easy for a party B to generate a pair [KUb , KRb]. It is computationally easy for a sender A, knowing the public key and the message to be encrypted M, to generate the corresponding ciphertext: C= Z = E[KUb(E[KRa(X)]]. It is computationally easy for the receiver B to decrypt the resulting ciphertext using the private key to recover the original message: M = X = D[KUa [E(KUb (Y))]] It is computationally infeasible for an opponent, knowing the public key KUb, to determine the private key KRb. It is computationally infeasible for an opponent, knowing the public key KUb, and a ciphertext C, to recover the original message M. The encryption and decryption functions can be applied in either order:   M = EKUb [DKRb (M) = DKUb [EKRb (M)]",
+    "next_context": "1. RSA Algorithm Ron Rivest, Adi Shamir &Len Aldeman Developed this Algorithm in 1978. It is public key encryption algorithm and block cipher which converts plain text into cipher text and vice versa.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 3
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 36,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 10,
+    "title": "1. RSA Algorithm",
+    "current_text": "1. RSA Algorithm Ron Rivest, Adi Shamir &Len Aldeman Developed this Algorithm in 1978. It is public key encryption algorithm and block cipher which converts plain text into cipher text and vice versa.",
+    "previous_context": "Public key cryptanalysis Public key encryption scheme is vulnerable to a brute force attack. The counter measure is to use large keys. Next----> Public Key Cryptography Algorithms",
+    "next_context": "1. The RSA algorithm: Key Generation",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 3
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 37,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 11,
+    "title": "1. The RSA algorithm:",
+    "current_text": "1. The RSA algorithm: Key Generation",
+    "previous_context": "1. RSA Algorithm Ron Rivest, Adi Shamir &Len Aldeman Developed this Algorithm in 1978. It is public key encryption algorithm and block cipher which converts plain text into cipher text and vice versa.",
+    "next_context": null,
+    "raw_metadata": {
+      "has_image": true,
+      "bullet_count": 2
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 38,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 12,
+    "title": null,
+    "current_text": null,
+    "previous_context": "1. The RSA algorithm: Key Generation",
+    "next_context": "Home work p=3,q=11,e=3, message M=00111011,  find d and cipher text C. Ans- C=20, d=7 2. p=13,q=17 & M=12 and public key e=19. Find cipher text C. Ans- C=181",
+    "raw_metadata": {
+      "has_image": true,
+      "bullet_count": 0
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 39,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 13,
+    "title": "Home work",
+    "current_text": "Home work p=3,q=11,e=3, message M=00111011,  find d and cipher text C. Ans- C=20, d=7 2. p=13,q=17 & M=12 and public key e=19. Find cipher text C. Ans- C=181",
+    "previous_context": null,
+    "next_context": "2. Security of RSA There are 4 approaches to attack the RSA: brute force key search (infeasible given size of numbers) mathematical attacks (based on difficulty of computing ø(N), by factoring modulus N) timing attacks (on running time of decryption) Chosen Cipher Attack: Hacker tries to attack on the properties of RSA Algorithm",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 5
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 40,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 14,
+    "title": "2. Security of RSA",
+    "current_text": "2. Security of RSA There are 4 approaches to attack the RSA: brute force key search (infeasible given size of numbers) mathematical attacks (based on difficulty of computing ø(N), by factoring modulus N) timing attacks (on running time of decryption) Chosen Cipher Attack: Hacker tries to attack on the properties of RSA Algorithm",
+    "previous_context": "Home work p=3,q=11,e=3, message M=00111011,  find d and cipher text C. Ans- C=20, d=7 2. p=13,q=17 & M=12 and public key e=19. Find cipher text C. Ans- C=181",
+    "next_context": "Factoring Problem Mathematical approach takes 3 forms: ·        Factor n = p*q, hence find Ф(n) and then d. ·        Determine Ф(n)directly without determining p and q and find d. ·        Find d directly, without first determination Ф(n).",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 6
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 41,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 15,
+    "title": "Factoring Problem",
+    "current_text": "Factoring Problem Mathematical approach takes 3 forms: ·        Factor n = p*q, hence find Ф(n) and then d. ·        Determine Ф(n)directly without determining p and q and find d. ·        Find d directly, without first determination Ф(n).",
+    "previous_context": "2. Security of RSA There are 4 approaches to attack the RSA: brute force key search (infeasible given size of numbers) mathematical attacks (based on difficulty of computing ø(N), by factoring modulus N) timing attacks (on running time of decryption) Chosen Cipher Attack: Hacker tries to attack on the properties of RSA Algorithm",
+    "next_context": "Timing attacks Although the timing attack is a serious threat, there are simple countermeasures that can be used: Constant exponentiation time – ensures that all exponentiations take the same amount of time before returning a result. Random delay – better performance could be achieved by adding a random delay to the exponentiation algorithm to confuse the timing attack. Blinding – multiply the ciphertext by a random number before performing exponentiation.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 5
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 42,
+    "ppt_name": "3_2.pptx",
+    "slide_number": 16,
+    "title": "Timing attacks",
+    "current_text": "Timing attacks Although the timing attack is a serious threat, there are simple countermeasures that can be used: Constant exponentiation time – ensures that all exponentiations take the same amount of time before returning a result. Random delay – better performance could be achieved by adding a random delay to the exponentiation algorithm to confuse the timing attack. Blinding – multiply the ciphertext by a random number before performing exponentiation.",
+    "previous_context": "Factoring Problem Mathematical approach takes 3 forms: ·        Factor n = p*q, hence find Ф(n) and then d. ·        Determine Ф(n)directly without determining p and q and find d. ·        Find d directly, without first determination Ф(n).",
+    "next_context": null,
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 5
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 43,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 1,
+    "title": "Cyber Security Course\u000b\u000bUnit 3: Asymmetric Ciphers\u000b\u000bLecture 4- Diffie-Hellman Key Exchange Algorithm",
+    "current_text": "Cyber Security Course\u000b\u000bUnit 3: Asymmetric Ciphers\u000b\u000bLecture 4- Diffie-Hellman Key Exchange Algorithm Ms Prranjali Jadhav AIDS Dept 1",
+    "previous_context": null,
+    "next_context": "Introduction to Diffie-Hellman Key Exchange Algorithm Whitefield Diffie and Martin Hellman develop Diffie-Hellman key exchange Algorithms in 1976 to overcome the problem of key agreement and exchange. It enables the two parties who want to communicate with each other to agree on a symmetric key, a key that can be used for encrypting and decryption; Note that Diffie Hellman key exchange algorithm can be used for only key exchange, not for encryption and decryption process. The algorithm is based on mathematical principles. 2",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 4
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 44,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 2,
+    "title": "Introduction to Diffie-Hellman Key Exchange Algorithm",
+    "current_text": "Introduction to Diffie-Hellman Key Exchange Algorithm Whitefield Diffie and Martin Hellman develop Diffie-Hellman key exchange Algorithms in 1976 to overcome the problem of key agreement and exchange. It enables the two parties who want to communicate with each other to agree on a symmetric key, a key that can be used for encrypting and decryption; Note that Diffie Hellman key exchange algorithm can be used for only key exchange, not for encryption and decryption process. The algorithm is based on mathematical principles. 2",
+    "previous_context": "Cyber Security Course\u000b\u000bUnit 3: Asymmetric Ciphers\u000b\u000bLecture 4- Diffie-Hellman Key Exchange Algorithm Ms Prranjali Jadhav AIDS Dept 1",
+    "next_context": "Diffie-Hellman Key Exchange Algorithm for Key Generation The algorithm is based on Elliptic Curve Cryptography, a method of doing public-key cryptography based on the algebra structure of elliptic curves over finite fields. The DH also uses the trapdoor function, just like many other ways to do public-key cryptography. 3",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 6
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 45,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 3,
+    "title": "Diffie-Hellman Key Exchange Algorithm for Key Generation",
+    "current_text": "Diffie-Hellman Key Exchange Algorithm for Key Generation The algorithm is based on Elliptic Curve Cryptography, a method of doing public-key cryptography based on the algebra structure of elliptic curves over finite fields. The DH also uses the trapdoor function, just like many other ways to do public-key cryptography. 3",
+    "previous_context": "Introduction to Diffie-Hellman Key Exchange Algorithm Whitefield Diffie and Martin Hellman develop Diffie-Hellman key exchange Algorithms in 1976 to overcome the problem of key agreement and exchange. It enables the two parties who want to communicate with each other to agree on a symmetric key, a key that can be used for encrypting and decryption; Note that Diffie Hellman key exchange algorithm can be used for only key exchange, not for encryption and decryption process. The algorithm is based on mathematical principles. 2",
+    "next_context": "DH Algorithm 1. The first party picks ONE prime numbers ’p’ and primitive root of p as ‘g’ and tells them to the second party. 2. The second party then picks a secret number (let’s call it a), and then it computes ga mod p and sends the result back to the first party; let’s call the result A. Keep in mind that the secret number is not sent to anyone, only the result is. 3. Then the first party does the same; it selects a secret number b and calculates the result B similar to the step 2. Then, this result is sent to the second party. 4. The second party takes the received number B and calculates Ba mod p 5. The first party takes the received number A and calculates Ab mod p 4",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 4
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 46,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 4,
+    "title": "DH Algorithm",
+    "current_text": "DH Algorithm 1. The first party picks ONE prime numbers ’p’ and primitive root of p as ‘g’ and tells them to the second party. 2. The second party then picks a secret number (let’s call it a), and then it computes ga mod p and sends the result back to the first party; let’s call the result A. Keep in mind that the secret number is not sent to anyone, only the result is. 3. Then the first party does the same; it selects a secret number b and calculates the result B similar to the step 2. Then, this result is sent to the second party. 4. The second party takes the received number B and calculates Ba mod p 5. The first party takes the received number A and calculates Ab mod p 4",
+    "previous_context": "Diffie-Hellman Key Exchange Algorithm for Key Generation The algorithm is based on Elliptic Curve Cryptography, a method of doing public-key cryptography based on the algebra structure of elliptic curves over finite fields. The DH also uses the trapdoor function, just like many other ways to do public-key cryptography. 3",
+    "next_context": "Diffie Hellman Algorithm 1. key =(YA)XBmod q           -> this is the same as calculated by B 2. Global Public Elements q: q is a prime number a: a < q and α is the primitive root of q 3. Key generation for user A Select a Private key XA   Here, XA  <q Now, Calculation of Public key YA YA = aXA mod q 5",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 7
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 47,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 5,
+    "title": "Diffie Hellman Algorithm",
+    "current_text": "Diffie Hellman Algorithm 1. key =(YA)XBmod q           -> this is the same as calculated by B 2. Global Public Elements q: q is a prime number a: a < q and α is the primitive root of q 3. Key generation for user A Select a Private key XA   Here, XA  <q Now, Calculation of Public key YA YA = aXA mod q 5",
+    "previous_context": "DH Algorithm 1. The first party picks ONE prime numbers ’p’ and primitive root of p as ‘g’ and tells them to the second party. 2. The second party then picks a secret number (let’s call it a), and then it computes ga mod p and sends the result back to the first party; let’s call the result A. Keep in mind that the secret number is not sent to anyone, only the result is. 3. Then the first party does the same; it selects a secret number b and calculates the result B similar to the step 2. Then, this result is sent to the second party. 4. The second party takes the received number B and calculates Ba mod p 5. The first party takes the received number A and calculates Ab mod p 4",
+    "next_context": "Diffie Hellman Algorithm 4. Key generation for user B Select a Private key XB    Here, XB  <q Now, Calculation of Public key YB     YB = aXb mod q 5. Calculation of Secret Key by A key =(YB)XA mod q 6. Calculation of Secret Key by B key =(YA)XB mod q 6",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 10
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 48,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 6,
+    "title": "Diffie Hellman Algorithm",
+    "current_text": "Diffie Hellman Algorithm 4. Key generation for user B Select a Private key XB    Here, XB  <q Now, Calculation of Public key YB     YB = aXb mod q 5. Calculation of Secret Key by A key =(YB)XA mod q 6. Calculation of Secret Key by B key =(YA)XB mod q 6",
+    "previous_context": "Diffie Hellman Algorithm 1. key =(YA)XBmod q           -> this is the same as calculated by B 2. Global Public Elements q: q is a prime number a: a < q and α is the primitive root of q 3. Key generation for user A Select a Private key XA   Here, XA  <q Now, Calculation of Public key YA YA = aXA mod q 5",
+    "next_context": "Example 1 1. Alice and Bob both use public numbers p = 23, g = 5 2. Alice selected private key a = 4, and Bob selected b = 3 as the private key 3. Both Alice and bob now calculate the value of A and B as follows: Alice:    A = ga mod p=(54 mod 23) = 4 Bob:    B = gb mod p=(53 mod 23) = 10 7",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 9
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 49,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 7,
+    "title": "Example 1",
+    "current_text": "Example 1 1. Alice and Bob both use public numbers p = 23, g = 5 2. Alice selected private key a = 4, and Bob selected b = 3 as the private key 3. Both Alice and bob now calculate the value of A and B as follows: Alice:    A = ga mod p=(54 mod 23) = 4 Bob:    B = gb mod p=(53 mod 23) = 10 7",
+    "previous_context": "Diffie Hellman Algorithm 4. Key generation for user B Select a Private key XB    Here, XB  <q Now, Calculation of Public key YB     YB = aXb mod q 5. Calculation of Secret Key by A key =(YB)XA mod q 6. Calculation of Secret Key by B key =(YA)XB mod q 6",
+    "next_context": "Example 4. Now, both Alice and Bob exchange public numbers with each other.  A = 4 and B = 10 5. Alice and Bob now calculate the symmetric keys Alice: ka = Ba mod p = 104 mod 23 = 18 Bob: kb = Ab mod p = 43 mod 23 = 18 6. 18 is the shared secret key. 8",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 7
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 50,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 8,
+    "title": "Example",
+    "current_text": "Example 4. Now, both Alice and Bob exchange public numbers with each other.  A = 4 and B = 10 5. Alice and Bob now calculate the symmetric keys Alice: ka = Ba mod p = 104 mod 23 = 18 Bob: kb = Ab mod p = 43 mod 23 = 18 6. 18 is the shared secret key. 8",
+    "previous_context": "Example 1 1. Alice and Bob both use public numbers p = 23, g = 5 2. Alice selected private key a = 4, and Bob selected b = 3 as the private key 3. Both Alice and bob now calculate the value of A and B as follows: Alice:    A = ga mod p=(54 mod 23) = 4 Bob:    B = gb mod p=(53 mod 23) = 10 7",
+    "next_context": "Example 2: 9 Find the Secret key, if Alice and Bob get public numbers P = 23, G = 9. Alice selected a private key a = 4 and Bob selected a private key b = 3.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 7
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 51,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 9,
+    "title": "Example 2:",
+    "current_text": "Example 2: 9 Find the Secret key, if Alice and Bob get public numbers P = 23, G = 9. Alice selected a private key a = 4 and Bob selected a private key b = 3.",
+    "previous_context": "Example 4. Now, both Alice and Bob exchange public numbers with each other.  A = 4 and B = 10 5. Alice and Bob now calculate the symmetric keys Alice: ka = Ba mod p = 104 mod 23 = 18 Bob: kb = Ab mod p = 43 mod 23 = 18 6. 18 is the shared secret key. 8",
+    "next_context": "Solution 2 Step 1: Alice and Bob compute public values Alice: \tA = (9^4 mod 23) = (6561 mod 23) = 6 Bob: \t\tB = (9^3 mod 23) = (729 mod 23) = 16 Step 2: \tAlice and Bob exchange public numbers Step 3: \tAlice receives public key B =16 and Bob receives public key A = 6 Step 4: \tAlice and Bob compute symmetric keys Alice: ka = Ba mod p = 164 mod 23 = 9 Bob: kb = Ab mod p = 63 mod 23 = 9 Step 5: \t9 is the shared secret.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 3
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 52,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 10,
+    "title": "Solution 2",
+    "current_text": "Solution 2 Step 1: Alice and Bob compute public values Alice: \tA = (9^4 mod 23) = (6561 mod 23) = 6 Bob: \t\tB = (9^3 mod 23) = (729 mod 23) = 16 Step 2: \tAlice and Bob exchange public numbers Step 3: \tAlice receives public key B =16 and Bob receives public key A = 6 Step 4: \tAlice and Bob compute symmetric keys Alice: ka = Ba mod p = 164 mod 23 = 9 Bob: kb = Ab mod p = 63 mod 23 = 9 Step 5: \t9 is the shared secret.",
+    "previous_context": "Example 2: 9 Find the Secret key, if Alice and Bob get public numbers P = 23, G = 9. Alice selected a private key a = 4 and Bob selected a private key b = 3.",
+    "next_context": "Uses of Diffie Hellman Algorithm Encryption: The Diffie-Hellman key exchange algorithm can be used to encrypt; one of the first schemes to do is ElGamal encryption. One modern example of it is called Integrated Encryption Scheme, which provides security against chosen plain text and chosen clipboard attacks. Password Authenticated Agreement: When two parties share a password, a password-authenticated key agreement can be used to prevent the Man in the middle attack. This key Agreement can be in the form of Diffie-Hellman. Secure Remote Password Protocol is a good example that is based on this technique. Forward Secrecy: Forward secrecy-based protocols can generate new key pairs for each new session, and they can automatically discard them when the session is finished. In these forward Secrecy protocols, more often than not, the Diffie Hellman key exchange is used. 11",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 11
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 53,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 11,
+    "title": "Uses of Diffie Hellman Algorithm",
+    "current_text": "Uses of Diffie Hellman Algorithm Encryption: The Diffie-Hellman key exchange algorithm can be used to encrypt; one of the first schemes to do is ElGamal encryption. One modern example of it is called Integrated Encryption Scheme, which provides security against chosen plain text and chosen clipboard attacks. Password Authenticated Agreement: When two parties share a password, a password-authenticated key agreement can be used to prevent the Man in the middle attack. This key Agreement can be in the form of Diffie-Hellman. Secure Remote Password Protocol is a good example that is based on this technique. Forward Secrecy: Forward secrecy-based protocols can generate new key pairs for each new session, and they can automatically discard them when the session is finished. In these forward Secrecy protocols, more often than not, the Diffie Hellman key exchange is used. 11",
+    "previous_context": "Solution 2 Step 1: Alice and Bob compute public values Alice: \tA = (9^4 mod 23) = (6561 mod 23) = 6 Bob: \t\tB = (9^3 mod 23) = (729 mod 23) = 16 Step 2: \tAlice and Bob exchange public numbers Step 3: \tAlice receives public key B =16 and Bob receives public key A = 6 Step 4: \tAlice and Bob compute symmetric keys Alice: ka = Ba mod p = 164 mod 23 = 9 Bob: kb = Ab mod p = 63 mod 23 = 9 Step 5: \t9 is the shared secret.",
+    "next_context": "Advantages of the Diffie Hellman Algorithm The sender and receiver don’t need any prior knowledge of each other. Once the keys are exchanged, the communication of data can be done through an insecure channel. The sharing of the secret key is safe. 12",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 5
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 54,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 12,
+    "title": "Advantages of the Diffie Hellman Algorithm",
+    "current_text": "Advantages of the Diffie Hellman Algorithm The sender and receiver don’t need any prior knowledge of each other. Once the keys are exchanged, the communication of data can be done through an insecure channel. The sharing of the secret key is safe. 12",
+    "previous_context": "Uses of Diffie Hellman Algorithm Encryption: The Diffie-Hellman key exchange algorithm can be used to encrypt; one of the first schemes to do is ElGamal encryption. One modern example of it is called Integrated Encryption Scheme, which provides security against chosen plain text and chosen clipboard attacks. Password Authenticated Agreement: When two parties share a password, a password-authenticated key agreement can be used to prevent the Man in the middle attack. This key Agreement can be in the form of Diffie-Hellman. Secure Remote Password Protocol is a good example that is based on this technique. Forward Secrecy: Forward secrecy-based protocols can generate new key pairs for each new session, and they can automatically discard them when the session is finished. In these forward Secrecy protocols, more often than not, the Diffie Hellman key exchange is used. 11",
+    "next_context": "Disadvantages of the Diffie Hellman Algorithm The algorithm can not be used for any asymmetric key exchange. Similarly, it can not be used for signing digital signatures. Since it doesn’t authenticate any party in the transmission, the Diffie Hellman key exchange is susceptible to a man-in-the-middle attack. 13",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 5
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 55,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 13,
+    "title": "Disadvantages of the Diffie Hellman Algorithm",
+    "current_text": "Disadvantages of the Diffie Hellman Algorithm The algorithm can not be used for any asymmetric key exchange. Similarly, it can not be used for signing digital signatures. Since it doesn’t authenticate any party in the transmission, the Diffie Hellman key exchange is susceptible to a man-in-the-middle attack. 13",
+    "previous_context": "Advantages of the Diffie Hellman Algorithm The sender and receiver don’t need any prior knowledge of each other. Once the keys are exchanged, the communication of data can be done through an insecure channel. The sharing of the secret key is safe. 12",
+    "next_context": "ElGamal Encryption Algorithm ElGamal encryption is a public-key cryptosystem. It uses asymmetric key encryption for communicating between two parties and encrypting the message. This cryptosystem is based on the difficulty of finding discrete logarithm in a cyclic group that is even if we know ga and gk, it is extremely difficult to compute gak.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 5
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 56,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 14,
+    "title": "ElGamal Encryption Algorithm",
+    "current_text": "ElGamal Encryption Algorithm ElGamal encryption is a public-key cryptosystem. It uses asymmetric key encryption for communicating between two parties and encrypting the message. This cryptosystem is based on the difficulty of finding discrete logarithm in a cyclic group that is even if we know ga and gk, it is extremely difficult to compute gak.",
+    "previous_context": "Disadvantages of the Diffie Hellman Algorithm The algorithm can not be used for any asymmetric key exchange. Similarly, it can not be used for signing digital signatures. Since it doesn’t authenticate any party in the transmission, the Diffie Hellman key exchange is susceptible to a man-in-the-middle attack. 13",
+    "next_context": "ElGamal Encryption Algorithm The ElGamal cryptographic algorithm is an asymmetric key encryption scheme based on the Diffie-Hellman key exchange. It was invented by Taher ElGamal in 1985. The algorithm is widely used for secure data transmission and has applications in digital signatures and encryption.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 2
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 57,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 15,
+    "title": "ElGamal Encryption Algorithm",
+    "current_text": "ElGamal Encryption Algorithm The ElGamal cryptographic algorithm is an asymmetric key encryption scheme based on the Diffie-Hellman key exchange. It was invented by Taher ElGamal in 1985. The algorithm is widely used for secure data transmission and has applications in digital signatures and encryption.",
+    "previous_context": "ElGamal Encryption Algorithm ElGamal encryption is a public-key cryptosystem. It uses asymmetric key encryption for communicating between two parties and encrypting the message. This cryptosystem is based on the difficulty of finding discrete logarithm in a cyclic group that is even if we know ga and gk, it is extremely difficult to compute gak.",
+    "next_context": null,
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 2
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 58,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 16,
+    "title": null,
+    "current_text": null,
+    "previous_context": "ElGamal Encryption Algorithm The ElGamal cryptographic algorithm is an asymmetric key encryption scheme based on the Diffie-Hellman key exchange. It was invented by Taher ElGamal in 1985. The algorithm is widely used for secure data transmission and has applications in digital signatures and encryption.",
+    "next_context": "Components of the ElGamal Algorithm 1. Key Generation: Public Parameters: Select a large prime number p and a generator g of the multiplicative group (Id,In,Asso) Z*p. Private Key: Select a private key x such that 1 ≤ x ≤p −2. Public Key: Compute h=gx mod  p. The public key is (p,g,h) and the private key is x.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 0
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 59,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 17,
+    "title": "Components of the ElGamal Algorithm",
+    "current_text": "Components of the ElGamal Algorithm 1. Key Generation: Public Parameters: Select a large prime number p and a generator g of the multiplicative group (Id,In,Asso) Z*p. Private Key: Select a private key x such that 1 ≤ x ≤p −2. Public Key: Compute h=gx mod  p. The public key is (p,g,h) and the private key is x.",
+    "previous_context": null,
+    "next_context": "Components of the ElGamal Algorithm 2. Encryption: To encrypt a message M: Choose a random integer k such that 1 ≤ k ≤ p−2. Compute C1 = gk mod  p. Compute C2 =M⋅hk mod  p. The ciphertext is (c1,c2).",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 5
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 60,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 18,
+    "title": "Components of the ElGamal Algorithm",
+    "current_text": "Components of the ElGamal Algorithm 2. Encryption: To encrypt a message M: Choose a random integer k such that 1 ≤ k ≤ p−2. Compute C1 = gk mod  p. Compute C2 =M⋅hk mod  p. The ciphertext is (c1,c2).",
+    "previous_context": "Components of the ElGamal Algorithm 1. Key Generation: Public Parameters: Select a large prime number p and a generator g of the multiplicative group (Id,In,Asso) Z*p. Private Key: Select a private key x such that 1 ≤ x ≤p −2. Public Key: Compute h=gx mod  p. The public key is (p,g,h) and the private key is x.",
+    "next_context": "Components of the ElGamal Algorithm 3. Decryption: To decrypt the ciphertext (c1,c2) using the private key x: Compute the shared secret s= Cx1 mod  p. Compute s−1 mod  p (the modular inverse of s). Compute the original message M = C2⋅s−1 mod  p.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 7
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 61,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 19,
+    "title": "Components of the ElGamal Algorithm",
+    "current_text": "Components of the ElGamal Algorithm 3. Decryption: To decrypt the ciphertext (c1,c2) using the private key x: Compute the shared secret s= Cx1 mod  p. Compute s−1 mod  p (the modular inverse of s). Compute the original message M = C2⋅s−1 mod  p.",
+    "previous_context": "Components of the ElGamal Algorithm 2. Encryption: To encrypt a message M: Choose a random integer k such that 1 ≤ k ≤ p−2. Compute C1 = gk mod  p. Compute C2 =M⋅hk mod  p. The ciphertext is (c1,c2).",
+    "next_context": "Suppose Alice wants to communicate with Bob. 1. Bob generates public and private keys: Bob chooses a very large number q and a cyclic group Fq. From the cyclic group Fq, he choose any element g and an element a such that gcd(a, q) = 1. Then he computes h = ga. Bob publishes F, h = ga, q, and g as his public key and retains a as private key. Idea of ElGamal cryptosystem: 20",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 6
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 62,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 20,
+    "title": null,
+    "current_text": "Suppose Alice wants to communicate with Bob. 1. Bob generates public and private keys: Bob chooses a very large number q and a cyclic group Fq. From the cyclic group Fq, he choose any element g and an element a such that gcd(a, q) = 1. Then he computes h = ga. Bob publishes F, h = ga, q, and g as his public key and retains a as private key. Idea of ElGamal cryptosystem: 20",
+    "previous_context": "Components of the ElGamal Algorithm 3. Decryption: To decrypt the ciphertext (c1,c2) using the private key x: Compute the shared secret s= Cx1 mod  p. Compute s−1 mod  p (the modular inverse of s). Compute the original message M = C2⋅s−1 mod  p.",
+    "next_context": "2. Alice encrypts data using Bob’s public key ‘g’: Alice selects an element k from cyclic group F such that gcd(k, q) = 1. Then she computes p = gk and s = hk = gak. She multiples s with M. Then she sends (p, M*s) = (gk, M*s). 3. Bob decrypts the message : Bob calculates s′ = pa = gak. He divides M*s by s′ to obtain M as s = s′. Idea of ElGamal cryptosystem:",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 9
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 63,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 21,
+    "title": null,
+    "current_text": "2. Alice encrypts data using Bob’s public key ‘g’: Alice selects an element k from cyclic group F such that gcd(k, q) = 1. Then she computes p = gk and s = hk = gak. She multiples s with M. Then she sends (p, M*s) = (gk, M*s). 3. Bob decrypts the message : Bob calculates s′ = pa = gak. He divides M*s by s′ to obtain M as s = s′. Idea of ElGamal cryptosystem:",
+    "previous_context": "Suppose Alice wants to communicate with Bob. 1. Bob generates public and private keys: Bob chooses a very large number q and a cyclic group Fq. From the cyclic group Fq, he choose any element g and an element a such that gcd(a, q) = 1. Then he computes h = ga. Bob publishes F, h = ga, q, and g as his public key and retains a as private key. Idea of ElGamal cryptosystem: 20",
+    "next_context": "Applications of ElGamal Encryption Algorithm Encryption: ElGamal is used for encrypting messages where public key cryptography is required. Digital Signatures: A variant of ElGamal is used for creating digital signatures, ensuring message authenticity and integrity.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 10
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 64,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 22,
+    "title": "Applications of ElGamal Encryption Algorithm",
+    "current_text": "Applications of ElGamal Encryption Algorithm Encryption: ElGamal is used for encrypting messages where public key cryptography is required. Digital Signatures: A variant of ElGamal is used for creating digital signatures, ensuring message authenticity and integrity.",
+    "previous_context": "2. Alice encrypts data using Bob’s public key ‘g’: Alice selects an element k from cyclic group F such that gcd(k, q) = 1. Then she computes p = gk and s = hk = gak. She multiples s with M. Then she sends (p, M*s) = (gk, M*s). 3. Bob decrypts the message : Bob calculates s′ = pa = gak. He divides M*s by s′ to obtain M as s = s′. Idea of ElGamal cryptosystem:",
+    "next_context": "Advantages Security: ElGamal is based on the discrete logarithm problem, which is considered to be a hard problem to solve. This makes it secure against attacks from hackers. Key distribution: The encryption and decryption keys are different, making it easier to distribute keys securely. This allows for secure communication between multiple parties. Digital signatures: ElGamal can also be used for digital signatures, which allows for secure authentication of messages.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 3
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 65,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 23,
+    "title": "Advantages",
+    "current_text": "Advantages Security: ElGamal is based on the discrete logarithm problem, which is considered to be a hard problem to solve. This makes it secure against attacks from hackers. Key distribution: The encryption and decryption keys are different, making it easier to distribute keys securely. This allows for secure communication between multiple parties. Digital signatures: ElGamal can also be used for digital signatures, which allows for secure authentication of messages.",
+    "previous_context": "Applications of ElGamal Encryption Algorithm Encryption: ElGamal is used for encrypting messages where public key cryptography is required. Digital Signatures: A variant of ElGamal is used for creating digital signatures, ensuring message authenticity and integrity.",
+    "next_context": "Disadvantages Slow processing: ElGamal is slower compared to other encryption algorithms, especially when used with long keys. This can make it impractical for certain applications that require fast processing speeds. Key size: ElGamal requires larger key sizes to achieve the same level of security as other algorithms. This can make it more difficult to use in some applications. Vulnerability to certain attacks: ElGamal is vulnerable to attacks based on the discrete logarithm problem, such as the index calculus algorithm. This can reduce the security of the algorithm in certain situations.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 4
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 66,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 24,
+    "title": "Disadvantages",
+    "current_text": "Disadvantages Slow processing: ElGamal is slower compared to other encryption algorithms, especially when used with long keys. This can make it impractical for certain applications that require fast processing speeds. Key size: ElGamal requires larger key sizes to achieve the same level of security as other algorithms. This can make it more difficult to use in some applications. Vulnerability to certain attacks: ElGamal is vulnerable to attacks based on the discrete logarithm problem, such as the index calculus algorithm. This can reduce the security of the algorithm in certain situations.",
+    "previous_context": "Advantages Security: ElGamal is based on the discrete logarithm problem, which is considered to be a hard problem to solve. This makes it secure against attacks from hackers. Key distribution: The encryption and decryption keys are different, making it easier to distribute keys securely. This allows for secure communication between multiple parties. Digital signatures: ElGamal can also be used for digital signatures, which allows for secure authentication of messages.",
+    "next_context": "Elliptic Curve Cryptography ECC, as the name implies, is an asymmetric encryption algorithm that employs the algebraic architecture of elliptic curves with finite fields. Elliptic Curve Cryptography (ECC) is an encryption technology comparable to RSA that enables public-key encryption. While RSA’s security is dependent on huge prime numbers, ECC leverages the mathematical theory of elliptic curves to achieve the same level of security with considerably smaller keys.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 4
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 67,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 25,
+    "title": "Elliptic Curve Cryptography",
+    "current_text": "Elliptic Curve Cryptography ECC, as the name implies, is an asymmetric encryption algorithm that employs the algebraic architecture of elliptic curves with finite fields. Elliptic Curve Cryptography (ECC) is an encryption technology comparable to RSA that enables public-key encryption. While RSA’s security is dependent on huge prime numbers, ECC leverages the mathematical theory of elliptic curves to achieve the same level of security with considerably smaller keys.",
+    "previous_context": "Disadvantages Slow processing: ElGamal is slower compared to other encryption algorithms, especially when used with long keys. This can make it impractical for certain applications that require fast processing speeds. Key size: ElGamal requires larger key sizes to achieve the same level of security as other algorithms. This can make it more difficult to use in some applications. Vulnerability to certain attacks: ElGamal is vulnerable to attacks based on the discrete logarithm problem, such as the index calculus algorithm. This can reduce the security of the algorithm in certain situations.",
+    "next_context": "History of Elliptic Curve Cryptography Neal Koblitz and Victor S. Miller independently proposed the use of elliptic curves in encryption in 1985. Elliptic curve cryptography algorithms entered wide use from 2004 to 2005. In the mid-1980s, researchers found that examining elliptic curves could lead to the discovery of new sources of difficult problems. Elliptic Curve Cryptography (ECC) introduced a new degree of security to public key cryptosystems, that provide combined encryption and digital signature services. The security of elliptic curve cryptosystems, like that of all public-key cryptosystems, is based on tough mathematical issues at the core. Given two elliptic curve points G and Y, where Y = kG. The term \"elliptic curve\" is derived from the ellipse. Elliptic curves were discovered in the form of the Diophantine equation for c, after the 17th century. Furthermore, while calculating the surface of the ellipse is simple, calculating the circumference of the ellipse is difficult.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 4
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 68,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 26,
+    "title": "History of Elliptic Curve Cryptography",
+    "current_text": "History of Elliptic Curve Cryptography Neal Koblitz and Victor S. Miller independently proposed the use of elliptic curves in encryption in 1985. Elliptic curve cryptography algorithms entered wide use from 2004 to 2005. In the mid-1980s, researchers found that examining elliptic curves could lead to the discovery of new sources of difficult problems. Elliptic Curve Cryptography (ECC) introduced a new degree of security to public key cryptosystems, that provide combined encryption and digital signature services. The security of elliptic curve cryptosystems, like that of all public-key cryptosystems, is based on tough mathematical issues at the core. Given two elliptic curve points G and Y, where Y = kG. The term \"elliptic curve\" is derived from the ellipse. Elliptic curves were discovered in the form of the Diophantine equation for c, after the 17th century. Furthermore, while calculating the surface of the ellipse is simple, calculating the circumference of the ellipse is difficult.",
+    "previous_context": "Elliptic Curve Cryptography ECC, as the name implies, is an asymmetric encryption algorithm that employs the algebraic architecture of elliptic curves with finite fields. Elliptic Curve Cryptography (ECC) is an encryption technology comparable to RSA that enables public-key encryption. While RSA’s security is dependent on huge prime numbers, ECC leverages the mathematical theory of elliptic curves to achieve the same level of security with considerably smaller keys.",
+    "next_context": "ECC, an alternative technique to RSA, is a powerful cryptography approach. It generates security between key pairs for public key encryption by using the mathematics of elliptic curves. RSA does something similar with prime numbers instead of elliptic curves, but ECC has gradually been growing in popularity recently due to its smaller key size and ability to maintain security. This trend will probably continue as the demand on devices to remain secure increases due to the size of keys growing, drawing on scarce mobile resources. This is why it is so important to understand elliptic curve cryptography in context. An elliptic curve is not an ellipse, or oval shape, but it is represented as a looping line intersecting two axes, which are lines on a graph used to indicate the position of a point. The curve is completely symmetric, or mirrored, along the x-axis of the graph.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 6
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 69,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 27,
+    "title": null,
+    "current_text": "ECC, an alternative technique to RSA, is a powerful cryptography approach. It generates security between key pairs for public key encryption by using the mathematics of elliptic curves. RSA does something similar with prime numbers instead of elliptic curves, but ECC has gradually been growing in popularity recently due to its smaller key size and ability to maintain security. This trend will probably continue as the demand on devices to remain secure increases due to the size of keys growing, drawing on scarce mobile resources. This is why it is so important to understand elliptic curve cryptography in context. An elliptic curve is not an ellipse, or oval shape, but it is represented as a looping line intersecting two axes, which are lines on a graph used to indicate the position of a point. The curve is completely symmetric, or mirrored, along the x-axis of the graph.",
+    "previous_context": "History of Elliptic Curve Cryptography Neal Koblitz and Victor S. Miller independently proposed the use of elliptic curves in encryption in 1985. Elliptic curve cryptography algorithms entered wide use from 2004 to 2005. In the mid-1980s, researchers found that examining elliptic curves could lead to the discovery of new sources of difficult problems. Elliptic Curve Cryptography (ECC) introduced a new degree of security to public key cryptosystems, that provide combined encryption and digital signature services. The security of elliptic curve cryptosystems, like that of all public-key cryptosystems, is based on tough mathematical issues at the core. Given two elliptic curve points G and Y, where Y = kG. The term \"elliptic curve\" is derived from the ellipse. Elliptic curves were discovered in the form of the Diophantine equation for c, after the 17th century. Furthermore, while calculating the surface of the ellipse is simple, calculating the circumference of the ellipse is difficult.",
+    "next_context": "Public key cryptography systems, like ECC, use a mathematical process to merge two distinct keys and then use the output to encrypt and decrypt data. One is a public key that is known to anyone, and the other is a private key that is only known by the sender and receiver of the data.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 3
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 70,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 28,
+    "title": null,
+    "current_text": "Public key cryptography systems, like ECC, use a mathematical process to merge two distinct keys and then use the output to encrypt and decrypt data. One is a public key that is known to anyone, and the other is a private key that is only known by the sender and receiver of the data.",
+    "previous_context": "ECC, an alternative technique to RSA, is a powerful cryptography approach. It generates security between key pairs for public key encryption by using the mathematics of elliptic curves. RSA does something similar with prime numbers instead of elliptic curves, but ECC has gradually been growing in popularity recently due to its smaller key size and ability to maintain security. This trend will probably continue as the demand on devices to remain secure increases due to the size of keys growing, drawing on scarce mobile resources. This is why it is so important to understand elliptic curve cryptography in context. An elliptic curve is not an ellipse, or oval shape, but it is represented as a looping line intersecting two axes, which are lines on a graph used to indicate the position of a point. The curve is completely symmetric, or mirrored, along the x-axis of the graph.",
+    "next_context": "What are the benefits of ECC? ECC requires smaller keys than other methods to achieve the same level of security. This can be important in constrained environments where limited storage is available. Because ECC offers equivalent security with lower computing power and battery resource usage, it is becoming more widely used in cryptocurrency platforms, including Bitcoin and Ethereum, mobile applications, and low-power devices that have limited computational power. Finally, ECC can be used for digital signatures, key exchange, and other purposes; this makes it a versatile tool for many different applications.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 1
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 71,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 29,
+    "title": "What are the benefits of ECC?",
+    "current_text": "What are the benefits of ECC? ECC requires smaller keys than other methods to achieve the same level of security. This can be important in constrained environments where limited storage is available. Because ECC offers equivalent security with lower computing power and battery resource usage, it is becoming more widely used in cryptocurrency platforms, including Bitcoin and Ethereum, mobile applications, and low-power devices that have limited computational power. Finally, ECC can be used for digital signatures, key exchange, and other purposes; this makes it a versatile tool for many different applications.",
+    "previous_context": "Public key cryptography systems, like ECC, use a mathematical process to merge two distinct keys and then use the output to encrypt and decrypt data. One is a public key that is known to anyone, and the other is a private key that is only known by the sender and receiver of the data.",
+    "next_context": "How does ECC work? From a cryptographic perspective, the points along the graph can be formulated using the following equation:     y²=x³ + ax + b, where a and b are constants, and x and y are variables. Elliptic curves have many interesting mathematical properties that make them well-suited for cryptography. For example, given two points P and Q on an elliptic curve, there is a third point R such that P + Q = R. This property is called “point addition” and is illustrated below. Another valuable property of cryptography is “point doubling.” This is when we take a point P on an elliptic curve and find another point 2P such that P + P = 2P. This is illustrated below. We can keep doubling points until we get to the point that we call “the infinity point,” which we denote as O. You can think of this as the limit case where the distance between P and 2P gets arbitrarily close to zero. Thus, we can add and double points on an elliptic curve to our heart’s content and never get the exact moment twice (except for O). Given any point P on an elliptic curve, an infinite number of points can be obtained by adding and doubling P (including O). Consequently, an endless number of possible keys can be generated using elliptic curves.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 4
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 72,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 30,
+    "title": "How does ECC work?",
+    "current_text": "How does ECC work? From a cryptographic perspective, the points along the graph can be formulated using the following equation:     y²=x³ + ax + b, where a and b are constants, and x and y are variables. Elliptic curves have many interesting mathematical properties that make them well-suited for cryptography. For example, given two points P and Q on an elliptic curve, there is a third point R such that P + Q = R. This property is called “point addition” and is illustrated below. Another valuable property of cryptography is “point doubling.” This is when we take a point P on an elliptic curve and find another point 2P such that P + P = 2P. This is illustrated below. We can keep doubling points until we get to the point that we call “the infinity point,” which we denote as O. You can think of this as the limit case where the distance between P and 2P gets arbitrarily close to zero. Thus, we can add and double points on an elliptic curve to our heart’s content and never get the exact moment twice (except for O). Given any point P on an elliptic curve, an infinite number of points can be obtained by adding and doubling P (including O). Consequently, an endless number of possible keys can be generated using elliptic curves.",
+    "previous_context": "What are the benefits of ECC? ECC requires smaller keys than other methods to achieve the same level of security. This can be important in constrained environments where limited storage is available. Because ECC offers equivalent security with lower computing power and battery resource usage, it is becoming more widely used in cryptocurrency platforms, including Bitcoin and Ethereum, mobile applications, and low-power devices that have limited computational power. Finally, ECC can be used for digital signatures, key exchange, and other purposes; this makes it a versatile tool for many different applications.",
+    "next_context": "ECC is based on the properties of a set of values for which operations can be performed on any two members of the group to produce a third member, which is derived from points where the line intersects the axes as shown with the green line and three blue dots in the below diagram labeled A, B and C.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 7
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 73,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 31,
+    "title": null,
+    "current_text": "ECC is based on the properties of a set of values for which operations can be performed on any two members of the group to produce a third member, which is derived from points where the line intersects the axes as shown with the green line and three blue dots in the below diagram labeled A, B and C.",
+    "previous_context": "How does ECC work? From a cryptographic perspective, the points along the graph can be formulated using the following equation:     y²=x³ + ax + b, where a and b are constants, and x and y are variables. Elliptic curves have many interesting mathematical properties that make them well-suited for cryptography. For example, given two points P and Q on an elliptic curve, there is a third point R such that P + Q = R. This property is called “point addition” and is illustrated below. Another valuable property of cryptography is “point doubling.” This is when we take a point P on an elliptic curve and find another point 2P such that P + P = 2P. This is illustrated below. We can keep doubling points until we get to the point that we call “the infinity point,” which we denote as O. You can think of this as the limit case where the distance between P and 2P gets arbitrarily close to zero. Thus, we can add and double points on an elliptic curve to our heart’s content and never get the exact moment twice (except for O). Given any point P on an elliptic curve, an infinite number of points can be obtained by adding and doubling P (including O). Consequently, an endless number of possible keys can be generated using elliptic curves.",
+    "next_context": "Multiplying a point on the curve by a number produces another point on the curve(point C). Taking point C and bringing it to the mirrored point on the opposite side of the x-axis produces point D. From here, a line is drawn back to our original point A, creating an intersection at point E. This process can be completed n number of times within a defined max value. The n is the private key value, which indicates how many times the equation should be run, ending on the final value that is used to encrypt and decrypt data. The maximum defined value of the equation relates to the key size used.",
+    "raw_metadata": {
+      "has_image": true,
+      "bullet_count": 1
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 74,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 32,
+    "title": null,
+    "current_text": "Multiplying a point on the curve by a number produces another point on the curve(point C). Taking point C and bringing it to the mirrored point on the opposite side of the x-axis produces point D. From here, a line is drawn back to our original point A, creating an intersection at point E. This process can be completed n number of times within a defined max value. The n is the private key value, which indicates how many times the equation should be run, ending on the final value that is used to encrypt and decrypt data. The maximum defined value of the equation relates to the key size used.",
+    "previous_context": "ECC is based on the properties of a set of values for which operations can be performed on any two members of the group to produce a third member, which is derived from points where the line intersects the axes as shown with the green line and three blue dots in the below diagram labeled A, B and C.",
+    "next_context": "Elliptic Curve Cryptography ECC is like most other public key encryption methods, such as the RSA algorithm and Diffie-Hellman. Each of these cryptography mechanisms uses the concept of a one-way, or trapdoor, function. This means that a mathematical equation with a public and private key can be used to easily get from point A to point B. But, without knowing the private key and depending on the key size used, getting from B to A is difficult, if not impossible, to achieve.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 3
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 75,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 33,
+    "title": "Elliptic Curve Cryptography",
+    "current_text": "Elliptic Curve Cryptography ECC is like most other public key encryption methods, such as the RSA algorithm and Diffie-Hellman. Each of these cryptography mechanisms uses the concept of a one-way, or trapdoor, function. This means that a mathematical equation with a public and private key can be used to easily get from point A to point B. But, without knowing the private key and depending on the key size used, getting from B to A is difficult, if not impossible, to achieve.",
+    "previous_context": "Multiplying a point on the curve by a number produces another point on the curve(point C). Taking point C and bringing it to the mirrored point on the opposite side of the x-axis produces point D. From here, a line is drawn back to our original point A, creating an intersection at point E. This process can be completed n number of times within a defined max value. The n is the private key value, which indicates how many times the equation should be run, ending on the final value that is used to encrypt and decrypt data. The maximum defined value of the equation relates to the key size used.",
+    "next_context": "Below is the difference between ECC and RSA:",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 4
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 76,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 34,
+    "title": "Below is the difference between ECC and RSA:",
+    "current_text": "Below is the difference between ECC and RSA:",
+    "previous_context": "Elliptic Curve Cryptography ECC is like most other public key encryption methods, such as the RSA algorithm and Diffie-Hellman. Each of these cryptography mechanisms uses the concept of a one-way, or trapdoor, function. This means that a mathematical equation with a public and private key can be used to easily get from point A to point B. But, without knowing the private key and depending on the key size used, getting from B to A is difficult, if not impossible, to achieve.",
+    "next_context": "ECC offers several benefits compared to RSA: It operates on devices with low CPU and memory resources. It encrypts and decrypts faster. Larger key sizes can be used without significantly increasing the key size or CPU and memory requirements.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 1
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 77,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 35,
+    "title": null,
+    "current_text": "ECC offers several benefits compared to RSA: It operates on devices with low CPU and memory resources. It encrypts and decrypts faster. Larger key sizes can be used without significantly increasing the key size or CPU and memory requirements.",
+    "previous_context": "Below is the difference between ECC and RSA:",
+    "next_context": "Elliptic Curve Cryptography Applications Elliptic Curve Digital Signature Algorithm (ECDSA): ECC is one of the most widely utilized digital signature implementation approaches in cryptocurrencies. In order to sign transactions, both Bitcoin and Ethereum use the field inverse multiplication, but also arithmetic multiplication, inverse function, and modular operation. Online application: Moreover, ECC is not limited to cryptocurrencies. It is an encryption standard that will be utilized by most online apps in the future due to its reduced key size and efficiency. Most commonly used in cryptocurrencies such as Bitcoin and Ethereum, along with single-way encryption of emails, data, and software. Blockchain application: The cryptocurrency Bitcoin employs elliptic curve cryptography.   Ethereum 2.0 makes heavy use of elliptic curve pairs with BLS signatures, as stated in the IETF proposed BLS specification, to cryptographically ensure that a specific Eth2 validator has really verified a specific transaction.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 4
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 78,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 36,
+    "title": "Elliptic Curve Cryptography Applications",
+    "current_text": "Elliptic Curve Cryptography Applications Elliptic Curve Digital Signature Algorithm (ECDSA): ECC is one of the most widely utilized digital signature implementation approaches in cryptocurrencies. In order to sign transactions, both Bitcoin and Ethereum use the field inverse multiplication, but also arithmetic multiplication, inverse function, and modular operation. Online application: Moreover, ECC is not limited to cryptocurrencies. It is an encryption standard that will be utilized by most online apps in the future due to its reduced key size and efficiency. Most commonly used in cryptocurrencies such as Bitcoin and Ethereum, along with single-way encryption of emails, data, and software. Blockchain application: The cryptocurrency Bitcoin employs elliptic curve cryptography.   Ethereum 2.0 makes heavy use of elliptic curve pairs with BLS signatures, as stated in the IETF proposed BLS specification, to cryptographically ensure that a specific Eth2 validator has really verified a specific transaction.",
+    "previous_context": "ECC offers several benefits compared to RSA: It operates on devices with low CPU and memory resources. It encrypts and decrypts faster. Larger key sizes can be used without significantly increasing the key size or CPU and memory requirements.",
+    "next_context": "Elliptic Curve Cryptography (ECC) used for ECC is frequently discussed in the context of the Rivest–Shamir–Adleman (RSA) cryptographic algorithm. RSA achieves one-way encryption of things like emails, data, and software using prime factorization. One example is online banking and payments. When you make an online purchase with your debit or credit card, your information is often encrypted using ECC before it’s sent over the internet. Pretty Good Privacy (PGP) is a popular email encryption software that can leverage ECC to protect your emails from being read by anyone other than the intended recipient.",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 4
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 79,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 37,
+    "title": "Elliptic Curve Cryptography (ECC) used for",
+    "current_text": "Elliptic Curve Cryptography (ECC) used for ECC is frequently discussed in the context of the Rivest–Shamir–Adleman (RSA) cryptographic algorithm. RSA achieves one-way encryption of things like emails, data, and software using prime factorization. One example is online banking and payments. When you make an online purchase with your debit or credit card, your information is often encrypted using ECC before it’s sent over the internet. Pretty Good Privacy (PGP) is a popular email encryption software that can leverage ECC to protect your emails from being read by anyone other than the intended recipient.",
+    "previous_context": "Elliptic Curve Cryptography Applications Elliptic Curve Digital Signature Algorithm (ECDSA): ECC is one of the most widely utilized digital signature implementation approaches in cryptocurrencies. In order to sign transactions, both Bitcoin and Ethereum use the field inverse multiplication, but also arithmetic multiplication, inverse function, and modular operation. Online application: Moreover, ECC is not limited to cryptocurrencies. It is an encryption standard that will be utilized by most online apps in the future due to its reduced key size and efficiency. Most commonly used in cryptocurrencies such as Bitcoin and Ethereum, along with single-way encryption of emails, data, and software. Blockchain application: The cryptocurrency Bitcoin employs elliptic curve cryptography.   Ethereum 2.0 makes heavy use of elliptic curve pairs with BLS signatures, as stated in the IETF proposed BLS specification, to cryptographically ensure that a specific Eth2 validator has really verified a specific transaction.",
+    "next_context": "THANK YOU 38",
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 4
+    }
+  },
+  {
+    "unit_id": "UNIT_3",
+    "global_slide_index": 80,
+    "ppt_name": "3_3.pptx",
+    "slide_number": 38,
+    "title": "THANK YOU",
+    "current_text": "THANK YOU 38",
+    "previous_context": "Elliptic Curve Cryptography (ECC) used for ECC is frequently discussed in the context of the Rivest–Shamir–Adleman (RSA) cryptographic algorithm. RSA achieves one-way encryption of things like emails, data, and software using prime factorization. One example is online banking and payments. When you make an online purchase with your debit or credit card, your information is often encrypted using ECC before it’s sent over the internet. Pretty Good Privacy (PGP) is a popular email encryption software that can leverage ECC to protect your emails from being read by anyone other than the intended recipient.",
+    "next_context": null,
+    "raw_metadata": {
+      "has_image": false,
+      "bullet_count": 2
+    }
+  }
+]
